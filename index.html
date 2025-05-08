@@ -103,6 +103,10 @@
         </div>
 
         <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-blue-600">AI-ML</h4>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
           <h4 class="text-xl font-semibold text-blue-600">HTML</h4>
         </div>
 
@@ -120,10 +124,6 @@
 
         <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
           <h4 class="text-xl font-semibold text-blue-600">SQL</h4>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
-          <h4 class="text-xl font-semibold text-blue-600">AI-ML</h4>
         </div>
 
         <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
@@ -215,10 +215,23 @@
   </section>
 
 
-  <!-- Footer -->
-  <footer class="py-6 text-center bg-gray-50 text-gray-600">
-    &copy; 2025 Raj Poddar. All rights reserved. (updated version 1.0)
-  </footer>
+<!-- Footer -->
+<footer class="py-6 text-center bg-gray-50 text-gray-600">
+  <p>&copy; 2025 Raj Poddar. All rights reserved. (updated version 1.0)</p>
+  <p id="visitor-count" class="text-sm mt-2">👁️ Visitors: Loading...</p>
+
+  <script>
+    fetch('https://api.countapi.xyz/hit/rajpoddar.github.io/visits')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('visitor-count').innerText = `👁️ Visitors: ${data.value}`;
+      })
+      .catch(() => {
+        document.getElementById('visitor-count').innerText = '👁️ Visitors: Unavailable';
+      });
+  </script>
+</footer>
+
 
 </body>
 
