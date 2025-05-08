@@ -2,127 +2,224 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Poddar's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raj Poddar | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
 
-<body>
-    <header>
-        <h1>Raj Poddar</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-white text-gray-800">
 
-    <!-- <section class="hero"> </section> -->
-    <!-- <img src="mypicnew..png" alt="image of raj poddar" height="200px" width="200px"> -->
+  <!-- Navbar -->
+  <header class="sticky top-0 bg-white shadow z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-blue-600">Raj Poddar</h1>
+      <nav class="space-x-6 text-gray-700 font-medium">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- <a href="#projects" class="cta-button">View My Work</a> -->
+  <!-- Hero Section -->
+  <section
+    class="min-h-screen flex items-center justify-center text-center bg-gradient-to-br from-blue-50 to-white px-4">
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Hi, I'm Raj Poddar👋</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
+        A software developer focused on building impactful web apps and AI projects. Passionate about clean code and
+        great UI/UX.
+      </p>
 
+      <br><br>
+      <a href="#projects"
+        class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700 transition">Explore My
+        Work</a>
+    </div>
+  </section>
 
-
-    <section id="about">
-        <h2>About Me</h2>
-        <h2>Welcome to My Portfolio</h2>
-
-        <p>“Hello everyone, my name is <strong>Raj Poddar</strong>. I have recently completed my Master of Computer
-            Applications (MCA)
-            from JIS College of Engineering. I'm a passionate developer creating impactful solutions. I am a self-driven
-            and meticulous individual with a strong foundation in
-            programming and problem-solving. My proficiency in both English and my native language enhances my
-            communication skills, allowing me to adapt to diverse environments. I am currently seeking opportunities in
-            the IT industry, where I can leverage my skills and passion for technology to contribute effectively to
-            innovative projects.”
-        </p>
-        <strong>Resume :</strong>
-        <a href="Raj_Poddar_Resume.pdf" class="cta-button">View My Resume</a> <br/> 
-<!--         pls don't forget to embed your yt video link -->
-<!--         the line below was giving an error while loading the page so the updated code is  -->
-<!--         <iframe src="https://youtu.be/embed/QxKPcZdK7lw" frameborder="0" controls height="250px" width="400px"></iframe> -->
-        <iframe src="https://www.youtube.com/embed/QxKPcZdK7lw" frameborder="0" controls height="250px"
-                width="400px"></iframe><br/>
-<!--         <iframe width="420" height="315" src="https://www.youtube.com/embed/QxKPcZdK7lw" frameborder="0" allowfullscreen></iframe><br/> -->
-        <a href="https://youtu.be/QxKPcZdK7lw" class="cta-button">Raj Poddar - AI & Software Developer Video Introduction</a>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>C</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>PHP</li>
-            <li>JavaScript (JS)</li>
-            <li>SQL</li>
-            <li>AI</li>
-            <li>ML</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>System Optimization of Dataset Results Using Supervised and Unsupervised Learning Methods (April 2023 -
-                April 2024)</h3>
-
-            <pre font="Arial, sans-serif">
-                📍 Technologies Used: Python, Scikit-Learn, NumPy & Pandas, Matplotlib & Seaborn, Optimization
-                Algorithms, Datasets, Jupyter Notebook and VS Code.
-                • Developed an optimized machine learning pipeline integrating Particle Swarm Optimization (PSO),
-                Genetic Algorithm (GA), Ant Colony Optimization (ACO) with Random Forest, Decision Tree, and Linear
-                Regression for feature selection and model enhancement.
-                • Designed a scalable system to improve dataset performance, reducing computation time and enhancing
-                model accuracy.
-                • Applied supervised and unsupervised learning techniques for real-world datasets like Breast Cancer,
-                Wine Quality, and Diabetes to derive meaningful insights.
-                • Optimized feature selection, reducing redundancy and improving model interpretability, achieving
-                enhanced accuracy with efficient computation.
-                • This project bridges optimization techniques with machine learning, ensuring data-driven models are
-                both efficient and highly accurate for real-world applications.
-            </pre>
-            <a href="Thesis.pdf" class="project-link">View Project Docs</a>
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-12">About Me</h3>
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <!-- Profile Photo -->
+        <div class="flex justify-center">
+          <img src="/portfoilio_upgrade/mypicnew..png" alt="Raj Poddar" class="rounded-xl w-64 shadow-lg" />
         </div>
-        <div class="project">
-            <h3>Dairy Management System (January 2022- April 2022)</h3>
-            <pre>
-                📍 Technologies Used: HTML, CSS, JavaScript, PHP, Bootstrap
-                • Developed an end-to-end Dairy Management System as well as food delivery web app with modules for Admin, Consumers, and Delivery Personnel.
-                • Implemented automated order processing, inventory tracking, and user authentication features.
-                • Enhanced user experience with a responsive web interface and optimized database queries for efficient data handling.
-                </pre>
-            <a href="Dairy.pdf" class="project-link">View Project Docs</a>
+
+        <!-- Text -->
+        <div class="md:col-span-2">
+          <p class="text-gray-700 text-lg mb-4">
+            I'm a full-stack developer with experience in AI, ML, and data analytics. I enjoy solving complex problems
+            and
+            translating ideas into real-world applications.
+
+            I have recently completed my Master of Computer Applications (MCA) from JIS College of
+            Engineering,Kalyani, West Bengal and I have also completed my Bachelor of Computer Science (BSc) from
+            Kanchrapara College, Kanchrapara, West Bengal. I'm a passionate developer creating impactful solutions. I am
+            a
+            self-driven and meticulous individual with a strong foundation in programming and problem-solving. My
+            proficiency in both English and my native language(Hindi and Bengali namely) enhances my communication
+            skills,
+            allowing me to adapt to
+            diverse environments. In the mean time i love to play chess, cricket, badminton or volleyball for mental and
+            physical well being. At present i am
+            seeking opportunities in the IT industry, where I can leverage my skills and passion for technology to
+            contribute effectively to innovative projects...Thank You !.”
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://www.youtube.com/watch?v=QxKPcZdK7lw" target="_blank"
+              class="bg-red-500 text-white px-4 py-2 rounded-xl hover:bg-red-600 transition">🎥 Watch My Intro</a>
+            <a href="Raj_Poddar_Resume__.pdf" download
+              class="bg-green-600 text-white px-4 py-2 rounded-xl hover:bg-green-700 transition">📄 Download Resume</a>
+          </div>
         </div>
-        <!-- Add more projects as needed -->
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p><strong>
-                Address:
-            </strong> Kanchrapara, West Bengal, India
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 px-6 bg-white text-center">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-12">Skills</h3>
+      <div class="grid md:grid-cols-3 gap-8">
 
-        <p>If you would like to get in touch, feel free to reach out via <strong>Email</strong> at <a
-                href="mailto:rajpoddar8907@gmail.com">rajpoddar8907@gmail.com</a> or <strong>Mobile Number</strong>
-            +91-9073066073.</p>
-        <p> <strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/raj-poddar-23a0841bb/">
-                https://www.linkedin.com/in/raj-poddar-23a0841bb/</a>
-        </p>
-    </section>
+        <!-- Skill Card -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-blue-600">Python</h4>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 Raj Poddar. All rights reserved.</p>
-    </footer>
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-blue-600">C</h4>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-blue-600">HTML</h4>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-blue-600">CSS</h4>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-blue-600">PHP</h4>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-blue-600">JavaScript (JS)</h4>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-blue-600">SQL</h4>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-blue-600">AI-ML</h4>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-blue-600">Data Analytics</h4>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6 bg-gray-100">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-12">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Project Card -->
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Health Insurance Premium Optimizer (April 2023 - April 2024)</h4>
+          <p class="text-gray-600 mb-4">A machine learning-based web app that predicts health insurance premiums based
+            on user inputs such as age, gender, BMI, smoking habits, and number of dependents. The model helps users
+            estimate potential costs and insurers streamline pricing strategies.
+            Technologies used: Python,
+            Scikit-Learn, NumPy & Pandas, Matplotlib & Seaborn, Optimization
+            Algorithms, Datasets, Jupyter Notebook and VS Code.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-600 font-medium hover:underline">View Docs</a>
+            <a href="#" class="text-gray-600 font-medium hover:underline">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Dairy Management System (January 2022- April 2022)</h4>
+          <p class="text-gray-600 mb-4">A web-based system designed to streamline daily operations for dairy businesses,
+            including milk entry, billing, inventory tracking, and customer record management. Technologies used:HTML,
+            CSS,
+            JavaScript, PHP, Bootstrap</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-600 font-medium hover:underline">View Demo</a>
+            <a href="#" class="text-gray-600 font-medium hover:underline">GitHub</a>
+          </div>
+        </div><!-- Project Card -->
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Personal Portfolio(May 2022)</h4>
+          <p class="text-gray-600 mb-4">A personal portfolio website to showcase my skills, academic background, and
+            projects. The site is clean, responsive, and built to highlight my work as a full-stack developer.
+            Technologies used: HTML, CSS,
+            JavaScript, PHP, Bootstrap</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-600 font-medium hover:underline">View Demo</a>
+            <a href="#" class="text-gray-600 font-medium hover:underline">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-white text-center">
+    <div class="max-w-3xl mx-auto">
+      <h3 class="text-3xl font-bold mb-4">Contact Me</h3>
+      <p class="text-gray-600 mb-6">Have a project or just want to say hi? Feel free to send a message!</p>
+
+      <!-- Contact Info -->
+      <div class="text-left text-gray-700 mb-10">
+        <p><strong>📍 Address:</strong> Kanchrapara, West Bengal, India</p>
+        <p><strong>📧 Email:</strong> <a href="mailto:rajpoddar8907@gmail.com"
+            class="text-blue-600 hover:underline">rajpoddar8907@gmail.com</a></p>
+        <p><strong>📱 Phone:</strong> <a href="tel:+919073066073"
+            class="text-blue-600 hover:underline">+91-9073066073</a></p>
+        <p><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/raj-poddar-23a0841bb/" target="_blank"
+            class="text-blue-600 hover:underline">linkedin.com/in/raj-poddar</a></p>
+      </div>
+
+      <!-- Contact Form -->
+      <form action="https://formsubmit.co/rajpoddar8907@gmail.com" method="POST" class="space-y-4">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 border rounded-xl" required />
+        <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 border rounded-xl" required />
+        <textarea name="message" rows="5" placeholder="Your Message" class="w-full px-4 py-3 border rounded-xl"
+          required></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">Send
+          Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-gray-50 text-gray-600">
+    &copy; 2025 Raj Poddar. All rights reserved. (updated version 1.0)
+  </footer>
+
 </body>
 
 </html>
