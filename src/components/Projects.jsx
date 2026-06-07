@@ -13,7 +13,7 @@ const Projects = () => {
         'Cleaned and processed 1,300+ customer records using Pandas, handling missing values, outliers, and categorical encoding.',
         'Performed comprehensive exploratory data analysis (EDA) revealing key factors: age, BMI, smoking status impact premiums.'
       ],
-      docLink: '/Thesis.pdf'
+      docLink: './Thesis.pdf'
     },
     {
       title: 'Dairy Management System with Analytics',
@@ -24,7 +24,7 @@ const Projects = () => {
         'Designed MySQL database with normalized schema for customer records, transactions, and inventory management.',
         'Built analytics dashboard showing daily sales trends, top customers, inventory levels, and revenue forecasting.'
       ],
-      docLink: '/Dairy.pdf'
+      docLink: './Dairy.pdf'
     }
   ];
 

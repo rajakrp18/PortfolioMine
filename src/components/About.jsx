@@ -24,7 +24,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="relative">
-              <img src="/mypic.jpg" alt="Raj Poddar" className="relative rounded-2xl w-full max-w-md mx-auto border border-gray-800" />
+              <img src="./mypic.jpg" alt="Raj Poddar" className="relative rounded-2xl w-full max-w-md mx-auto border border-gray-800" />
             </div>
           </motion.div>
 

@@ -16,7 +16,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/mypic.jpg" alt="Raj Poddar" className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-top border-4 border-blue-500/30 mb-8 mx-auto" />
+          <img src="./mypic.jpg" alt="Raj Poddar" className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-top border-4 border-blue-500/30 mb-8 mx-auto" />
         </motion.div>
 
         <motion.h2 
@@ -55,7 +55,7 @@ const Hero = () => {
           <Link to="projects" smooth={true} duration={500} className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full cursor-pointer transition-all hover:scale-105 shadow-lg shadow-blue-500/25">
             Explore My Work
           </Link>
-          <a href="/Raj_Poddar_Data_Analyst_Resume-compressed.pdf" download className="px-8 py-4 card-glass hover:bg-gray-800 text-white font-medium rounded-full flex items-center justify-center gap-2 transition-all hover:scale-105">
+          <a href="./Raj_Poddar_Data_Analyst_Resume-compressed.pdf" download className="px-8 py-4 card-glass hover:bg-gray-800 text-white font-medium rounded-full flex items-center justify-center gap-2 transition-all hover:scale-105">
             <Download size={20} /> Download Resume
           </a>
         </motion.div>
