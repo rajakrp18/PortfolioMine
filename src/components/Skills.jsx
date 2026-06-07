@@ -51,7 +51,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card-glass p-6 rounded-2xl border-t border-gray-700 hover:-translate-y-2 transition-transform duration-300"
+              className="card-glass p-6 rounded-2xl border-t border-gray-700 hover:-tranzinc-y-2 transition-transform duration-300"
             >
               <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
                 <span className="w-8 h-8 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-sm">
@@ -61,7 +61,7 @@ const Skills = () => {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, idx) => (
-                  <span key={idx} className="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm font-medium border border-gray-700 hover:border-blue-500 hover:text-white transition-colors cursor-default">
+                  <span key={idx} className="px-3 py-1 bg-zinc-800 text-gray-300 rounded-full text-sm font-medium border border-gray-700 hover:border-blue-500 hover:text-white transition-colors cursor-default">
                     {skill}
                   </span>
                 ))}

@@ -50,13 +50,13 @@ const Experience = () => {
 
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500/20 via-purple-500/20 to-transparent rounded-full"></div>
+          <div className="absolute left-4 md:left-1/2 transform md:-tranzinc-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500/20 via-purple-500/20 to-transparent rounded-full"></div>
 
           <div className="space-y-16">
             {experiences.map((exp, index) => (
               <div key={index} className="relative flex flex-col md:flex-row justify-between items-center w-full group">
                 {/* Timeline Dot */}
-                <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-slate-900 border-4 border-blue-500 z-10 shadow-[0_0_15px_rgba(59,130,246,0.8)] group-hover:border-purple-400 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.8)] transition-all duration-300"></div>
+                <div className="absolute left-4 md:left-1/2 transform -tranzinc-x-1/2 w-5 h-5 rounded-full bg-zinc-900 border-4 border-blue-500 z-10 shadow-[0_0_15px_rgba(59,130,246,0.8)] group-hover:border-purple-400 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.8)] transition-all duration-300"></div>
 
                 {/* Left Side (Empty on mobile, content or empty on desktop) */}
                 <div className={`w-full md:w-5/12 pl-12 md:pl-0 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:order-2 md:pl-16 text-left'}`}>
@@ -65,7 +65,7 @@ const Experience = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className={`card-glass p-8 rounded-2xl relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(59,130,246,0.15)] border border-gray-700/50 hover:border-blue-500/50`}
+                    className={`card-glass p-8 rounded-2xl relative overflow-hidden transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-[0_10px_30px_rgba(59,130,246,0.15)] border border-gray-700/50 hover:border-blue-500/50`}
                   >
                     {/* Subtle gradient overlay */}
                     <div className={`absolute top-0 w-full h-1 bg-gradient-to-r ${index % 2 === 0 ? 'from-purple-600 to-blue-500' : 'from-blue-500 to-purple-600'} left-0`}></div>
@@ -73,7 +73,7 @@ const Experience = () => {
                     <h3 className="text-2xl font-bold text-white mb-2">{exp.role}</h3>
                     <h4 className="text-lg font-semibold text-blue-400 mb-4">{exp.company}</h4>
                     
-                    <div className={`inline-block px-4 py-1.5 rounded-full bg-slate-800/80 border border-gray-700 text-sm font-medium text-gray-300 mb-6 shadow-inner ${index % 2 === 0 ? 'md:ml-auto' : ''}`}>
+                    <div className={`inline-block px-4 py-1.5 rounded-full bg-zinc-800/80 border border-gray-700 text-sm font-medium text-gray-300 mb-6 shadow-inner ${index % 2 === 0 ? 'md:ml-auto' : ''}`}>
                       {exp.period}
                     </div>
 

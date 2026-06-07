@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="bg-slate-950 min-h-screen text-slate-50 selection:bg-blue-500/30">
+    <div className="bg-black min-h-screen text-zinc-50 selection:bg-blue-500/30">
       <Navbar />
       <main>
         <Hero />
@@ -19,7 +19,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
-      <footer className="pt-20 pb-10 border-t border-gray-800 bg-slate-950/80 mt-20 relative overflow-hidden">
+      <footer className="pt-20 pb-10 border-t border-gray-800 bg-black mt-20 relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50"></div>
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12 mb-12 relative z-10">
           <div>

@@ -78,15 +78,15 @@ const Contact = () => {
               <input type="hidden" name="_captcha" value="false" />
               <div>
                 <label className="block text-sm font-medium text-gray-400 mb-2">Your Name</label>
-                <input type="text" name="name" required className="w-full bg-slate-900/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors" placeholder="John Doe" />
+                <input type="text" name="name" required className="w-full bg-zinc-900/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors" placeholder="John Doe" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-400 mb-2">Your Email</label>
-                <input type="email" name="email" required className="w-full bg-slate-900/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors" placeholder="john@example.com" />
+                <input type="email" name="email" required className="w-full bg-zinc-900/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors" placeholder="john@example.com" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-400 mb-2">Message</label>
-                <textarea name="message" required rows="4" className="w-full bg-slate-900/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors resize-none" placeholder="How can I help you?"></textarea>
+                <textarea name="message" required rows="4" className="w-full bg-zinc-900/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors resize-none" placeholder="How can I help you?"></textarea>
               </div>
               <button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold py-4 rounded-xl transition-all hover:scale-[1.02] active:scale-95 shadow-lg shadow-purple-500/25">
                 Send Message

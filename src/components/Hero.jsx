@@ -16,7 +16,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/mypic.jpg" alt="Raj Poddar" className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-top border-4 border-blue-500/30 shadow-2xl mb-8 mx-auto" />
+          <img src="/mypic.jpg" alt="Raj Poddar" className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-top border-4 border-blue-500/30 mb-8 mx-auto" />
         </motion.div>
 
         <motion.h2 

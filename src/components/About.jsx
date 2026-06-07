@@ -24,8 +24,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-2xl transform rotate-3 scale-105 opacity-50 blur-lg"></div>
-              <img src="/mypic.jpg" alt="Raj Poddar" className="relative rounded-2xl w-full max-w-md mx-auto shadow-2xl border border-gray-800" />
+              <img src="/mypic.jpg" alt="Raj Poddar" className="relative rounded-2xl w-full max-w-md mx-auto border border-gray-800" />
             </div>
           </motion.div>
 
