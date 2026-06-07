@@ -34,7 +34,7 @@ const Experience = () => {
       <div className="absolute top-40 left-0 w-72 h-72 bg-blue-600/10 rounded-full blur-[120px] -z-10"></div>
       <div className="absolute bottom-40 right-0 w-72 h-72 bg-purple-600/10 rounded-full blur-[120px] -z-10"></div>
 
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -59,13 +59,13 @@ const Experience = () => {
                 <div className="absolute left-4 md:left-1/2 transform -tranzinc-x-1/2 w-5 h-5 rounded-full bg-zinc-900 border-4 border-blue-500 z-10 shadow-[0_0_15px_rgba(59,130,246,0.8)] group-hover:border-purple-400 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.8)] transition-all duration-300"></div>
 
                 {/* Left Side (Empty on mobile, content or empty on desktop) */}
-                <div className={`w-full md:w-5/12 pl-12 md:pl-0 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:order-2 md:pl-16 text-left'}`}>
+                <div className={`w-full md:w-[45%] pl-12 md:pl-0 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:order-2 md:pl-16 text-left'}`}>
                   <motion.div
                     initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className={`card-glass p-8 rounded-2xl relative overflow-hidden transition-all duration-500 hover:-tranzinc-y-2 hover:shadow-[0_10px_30px_rgba(59,130,246,0.15)] border border-gray-700/50 hover:border-blue-500/50`}
+                    className={`card-glass p-8 md:p-10 rounded-2xl relative overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(59,130,246,0.2)] border border-white/10 hover:border-blue-500/50 bg-white/5 backdrop-blur-xl`}
                   >
                     {/* Subtle gradient overlay */}
                     <div className={`absolute top-0 w-full h-1 bg-gradient-to-r ${index % 2 === 0 ? 'from-purple-600 to-blue-500' : 'from-blue-500 to-purple-600'} left-0`}></div>
@@ -89,7 +89,7 @@ const Experience = () => {
                 </div>
                 
                 {/* Empty side for layout balancing on desktop */}
-                <div className={`hidden md:block w-5/12 ${index % 2 === 0 ? 'order-2' : ''}`}></div>
+                <div className={`hidden md:block w-[45%] ${index % 2 === 0 ? 'order-2' : ''}`}></div>
               </div>
             ))}
           </div>

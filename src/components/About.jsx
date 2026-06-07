@@ -16,15 +16,17 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-12 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            className="md:col-span-4"
           >
-            <div className="relative">
-              <img src="./mypic.jpg" alt="Raj Poddar" className="relative rounded-2xl w-full max-w-md mx-auto border border-gray-800" />
+            <div className="relative flex justify-center">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl blur-lg opacity-30"></div>
+              <img src="./mypic.jpg" alt="Raj Poddar" className="relative rounded-2xl w-3/4 md:w-full max-w-[250px] mx-auto border border-gray-700 shadow-2xl shadow-blue-500/10" />
             </div>
           </motion.div>
 
@@ -33,7 +35,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-gray-400 text-lg leading-relaxed space-y-6"
+            className="md:col-span-8 text-gray-300 text-lg leading-relaxed space-y-6"
           >
             <p>
               I'm a Data Analyst and MCA graduate with hands-on experience in Python, SQL, and data visualization. I am skilled in performing data cleaning, exploratory data analysis (EDA), and building analytical dashboards to derive actionable insights from structured and unstructured datasets.
