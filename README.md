@@ -1,16 +1,31 @@
-# React + Vite
+# Raj Poddar - Portfolio Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! I am a **Data Analyst and Software Developer** with an MCA degree and a strong passion for transforming raw data into actionable insights and building robust, data-driven applications.
 
-Currently, two official plugins are available:
+This repository houses the source code for my personal portfolio website, as well as the highlighted projects that demonstrate my technical capabilities across data analysis, machine learning, and full-stack software engineering.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 👨‍💻 About Me
+*   **Focus:** Data Analysis, Backend Development, and Machine Learning.
+*   **Core Skills:** Python, SQL, JavaScript, Pandas, Scikit-learn, Power BI, PostgreSQL, FastAPI, React.
+*   **Experience:** I have hands-on experience working in dynamic startup environments (*Vision Innovations*, *Weloin Technologies*), building scalable backend services, RESTful APIs, and implementing NLP and vector-search pipelines.
 
-## React Compiler
+## 🚀 Featured Projects
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. Dairy Management System (v2.0)
+*(Located in the `dairy-app/` directory)*
+A modernized, full-stack iteration of my original Dairy Management System project, upgraded from PHP/MySQL to a state-of-the-art tech stack. 
+*   **Tech Stack:** React, Node.js, Express, PostgreSQL, Tailwind CSS, Framer Motion.
+*   **Features:**
+    *   **E-Commerce Storefront:** A premium, glassmorphic public landing page for consumers to browse the catalog and place orders.
+    *   **Admin Dashboard:** Comprehensive CRUD operations for product management, inventory tracking, farmer verification, and delivery agent dispatching.
+    *   **Analytics Dashboard:** Interactive visualizations using `recharts` to monitor daily milk sourcing trends, revenue growth, top-selling products, and buyer segments.
+    *   **Role-Based Access Control:** Secure JWT authentication separating Admins, Farmers, Delivery Agents, and Consumers.
 
-## Expanding the ESLint configuration
+### 2. Health Insurance Premium Prediction & Analysis
+*   **Tech Stack:** Python, Pandas, Scikit-learn, Matplotlib, NumPy.
+*   **Overview:** Built a machine learning regression model (Random Forest & XGBoost) to predict insurance premiums with 83%+ accuracy. Conducted extensive EDA on 1,300+ customer records to identify key pricing factors like age, BMI, and smoking status.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📫 Let's Connect
+*   **Email:** [rajpoddar8907@gmail.com](mailto:rajpoddar8907@gmail.com)
+*   **LinkedIn:** [linkedin.com/in/raj-poddar-23a0841bb](https://linkedin.com/in/raj-poddar-23a0841bb)
+*   **GitHub:** [github.com/rajakrp18](https://github.com/rajakrp18)
