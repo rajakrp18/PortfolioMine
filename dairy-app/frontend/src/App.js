@@ -6,6 +6,8 @@ import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 
 // Pages
+import LandingPage      from './pages/public/LandingPage';
+import ContactPage      from './pages/public/ContactPage';
 import LoginPage        from './pages/LoginPage';
 import RegisterPage     from './pages/RegisterPage';
 import DashboardRouter  from './pages/DashboardRouter';
@@ -47,7 +49,8 @@ const App = () => (
         {/* Public routes */}
         <Route path="/login"    element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="/"         element={<Navigate to="/dashboard" replace />} />
+        <Route path="/contact"  element={<ContactPage />} />
+        <Route path="/"         element={<LandingPage />} />
 
         {/* Smart dashboard router — picks correct dashboard by role */}
         <Route element={<ProtectedRoute />}>

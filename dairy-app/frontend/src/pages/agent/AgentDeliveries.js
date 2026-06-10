@@ -168,5 +168,3 @@ export const FarmerDashboard = () => {
   );
 };
 
-// Named re-exports for App.js imports
-export { AgentDeliveries as default };

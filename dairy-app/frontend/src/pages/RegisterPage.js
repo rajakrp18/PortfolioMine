@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
+import { useCart } from '../context/CartContext';
 import api from '../utils/api';
 
 const ROLES = [
@@ -15,6 +16,7 @@ const ROLES = [
 
 const RegisterPage = () => {
   const { login }       = useAuth();
+  const { items }       = useCart();
   const navigate        = useNavigate();
   const [step, setStep] = useState(1);   // 1 = choose role, 2 = fill form
   const [role, setRole] = useState('');
@@ -33,7 +35,17 @@ const RegisterPage = () => {
       const { data } = await api.post('/auth/register', { ...form, role });
       login(data.token, data.user);
       toast.success('Account created!');
-      navigate('/dashboard');
+      
+      // Route smartly based on role
+      if (['consumer', 'retailer', 'wholesaler'].includes(role)) {
+        if (items.length > 0) {
+          navigate('/shop/cart');
+        } else {
+          navigate('/shop/products');
+        }
+      } else {
+        navigate('/dashboard');
+      }
     } catch (err) {
       toast.error(err.response?.data?.error || 'Registration failed');
     } finally {

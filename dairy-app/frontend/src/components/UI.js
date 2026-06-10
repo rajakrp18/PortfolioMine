@@ -6,7 +6,7 @@ import { Loader2 } from 'lucide-react';
 
 // ── Card ─────────────────────────────────────────────────────
 export const Card = ({ children, className = '' }) => (
-  <div className={`bg-white rounded-xl border border-gray-200 shadow-sm ${className}`}>
+  <div className={`bg-white rounded-3xl border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden ${className}`}>
     {children}
   </div>
 );
@@ -98,16 +98,16 @@ export const Button = ({
   size = 'md', disabled, loading, className = '', icon: Icon
 }) => {
   const variants = {
-    primary:   'bg-emerald-600 hover:bg-emerald-700 text-white',
-    secondary: 'bg-gray-100 hover:bg-gray-200 text-gray-700',
-    danger:    'bg-red-600 hover:bg-red-700 text-white',
+    primary:   'bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white shadow-md hover:shadow-lg hover:shadow-emerald-500/20',
+    secondary: 'bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 hover:border-gray-300 shadow-sm',
+    danger:    'bg-red-50 hover:bg-red-100 text-red-600 border border-red-100',
     outline:   'border border-gray-300 hover:bg-gray-50 text-gray-700',
     ghost:     'hover:bg-gray-100 text-gray-600',
   };
   const sizes = {
     sm: 'text-xs px-3 py-1.5',
-    md: 'text-sm px-4 py-2',
-    lg: 'text-sm px-6 py-2.5',
+    md: 'text-sm px-5 py-2.5',
+    lg: 'text-base px-6 py-3',
   };
 
   return (
@@ -115,11 +115,12 @@ export const Button = ({
       type={type}
       onClick={onClick}
       disabled={disabled || loading}
-      className={`inline-flex items-center gap-2 font-medium rounded-lg
-                  transition-colors disabled:opacity-50 disabled:cursor-not-allowed
+      className={`inline-flex items-center justify-center gap-2 font-bold rounded-xl
+                  transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed
+                  active:scale-95
                   ${variants[variant]} ${sizes[size]} ${className}`}
     >
-      {loading ? <Loader2 size={14} className="animate-spin" /> : Icon && <Icon size={14} />}
+      {loading ? <Loader2 size={16} className="animate-spin" /> : Icon && <Icon size={16} />}
       {children}
     </button>
   );

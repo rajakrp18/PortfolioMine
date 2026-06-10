@@ -3,10 +3,12 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
+import { useCart } from '../context/CartContext';
 import api from '../utils/api';
 
 const LoginPage = () => {
   const { login }    = useAuth();
+  const { items }    = useCart();
   const navigate     = useNavigate();
   const [form, setForm] = useState({ email: '', password: '' });
   const [busy, setBusy] = useState(false);
@@ -18,7 +20,17 @@ const LoginPage = () => {
       const { data } = await api.post('/auth/login', form);
       login(data.token, data.user);
       toast.success(`Welcome back, ${data.user.name}!`);
-      navigate('/dashboard');
+      
+      // Route smartly based on role
+      if (['consumer', 'retailer', 'wholesaler'].includes(data.user.role)) {
+        if (items.length > 0) {
+          navigate('/shop/cart');
+        } else {
+          navigate('/shop/products');
+        }
+      } else {
+        navigate('/dashboard');
+      }
     } catch (err) {
       toast.error(err.response?.data?.error || 'Login failed');
     } finally {
