@@ -165,7 +165,7 @@ const Contact = () => {
                 className="flex-1 card-crafted p-4 rounded-xl flex items-center justify-center gap-2 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-500 transition-all shadow-xs"
               >
                 <LinkedInIcon size={16} className="text-blue-600" />
-                <span>LinkedIn (1.4k+ Network)</span>
+                <span>LinkedIn (2,056+ Network)</span>
                 <ArrowUpRight size={13} className="opacity-50" />
               </a>
 
