@@ -6,9 +6,7 @@ import {
   Layout, 
   Database, 
   Cpu, 
-  Wrench, 
-  Terminal, 
-  CheckCircle2 
+  Wrench 
 } from 'lucide-react';
 
 const Skills = () => {
@@ -19,11 +17,11 @@ const Skills = () => {
       badge: 'Core Syntax',
       color: 'blue',
       skills: [
+        { name: 'TypeScript', level: 'Production' },
         { name: 'Python', level: 'Production' },
         { name: 'JavaScript (ES6+)', level: 'Production' },
-        { name: 'TypeScript', level: 'Intermediate' },
         { name: 'SQL', level: 'Production' },
-        { name: 'C / C++', level: 'Academic Core' },
+        { name: 'C / C++', level: 'Core CS' },
         { name: 'HTML5 / CSS3', level: 'Production' }
       ]
     },
@@ -33,12 +31,12 @@ const Skills = () => {
       badge: 'High Throughput',
       color: 'emerald',
       skills: [
-        { name: 'FastAPI', level: 'Production' },
+        { name: 'FastAPI (Async)', level: 'Production' },
         { name: 'Node.js & Express', level: 'Production' },
+        { name: 'SQLAlchemy 2.0 (Async)', level: 'Production' },
         { name: 'RESTful API Architecture', level: 'Production' },
-        { name: 'Serial Communication (Arduino)', level: 'Hardware I/O' },
-        { name: 'WebSockets', level: 'Real-Time' },
-        { name: 'Flask', level: 'Experienced' }
+        { name: 'JWT & RBAC Middleware', level: 'Security' },
+        { name: 'WebSockets', level: 'Real-Time' }
       ]
     },
     {
@@ -47,54 +45,54 @@ const Skills = () => {
       badge: 'Reactive UI',
       color: 'purple',
       skills: [
-        { name: 'React', level: 'Production' },
-        { name: 'Next.js', level: 'Production' },
+        { name: 'Next.js 14 (App Router)', level: 'Production' },
+        { name: 'React 18', level: 'Production' },
         { name: 'Tailwind CSS', level: 'Production' },
-        { name: 'Framer Motion', level: 'Micro-animations' },
-        { name: 'Responsive Layouts', level: 'Production' },
-        { name: 'State Management', level: 'Production' }
+        { name: 'React Query & Zustand', level: 'State/Cache' },
+        { name: 'Responsive Systems', level: 'Production' },
+        { name: 'Framer Motion', level: 'Micro-animations' }
       ]
     },
     {
-      title: 'Databases & Vector Search',
+      title: 'Databases & Caching',
       icon: Database,
       badge: 'Data Integrity',
       color: 'amber',
       skills: [
-        { name: 'PostgreSQL', level: 'Production' },
-        { name: 'Vector Search / Cosine', level: 'Embeddings' },
-        { name: 'MongoDB', level: 'Experienced' },
+        { name: 'PostgreSQL (RLS & Indexing)', level: 'Production' },
+        { name: 'Redis (Caching & Queues)', level: 'Scale' },
+        { name: 'SQLite / aiosqlite', level: 'Async Embedded' },
         { name: 'MySQL', level: 'Production' },
-        { name: 'Schema Design & RLS', level: 'Enterprise' },
-        { name: 'Index Optimization', level: 'Performance' }
+        { name: 'Schema Design & Normalization', level: 'Enterprise' },
+        { name: 'Vector Search / Cosine', level: 'Embeddings' }
       ]
     },
     {
-      title: 'AI, ML & NLP',
+      title: 'AI, RAG & Multi-Agent',
       icon: Cpu,
       badge: 'Applied AI',
       color: 'pink',
       skills: [
-        { name: 'Hugging Face Transformers', level: 'Production' },
-        { name: 'Sentence Transformers', level: 'Production' },
-        { name: 'Scikit-learn', level: 'Experienced' },
-        { name: 'XGBoost & Random Forest', level: 'Regression/Clf' },
-        { name: 'Pandas & NumPy', level: 'Data Science' },
-        { name: 'EDA & Feature Engineering', level: 'Analytical' }
+        { name: 'Google Gemini 2.5/3.6 Flash', level: 'Production' },
+        { name: 'Legal & Enterprise RAG', level: 'Grounded Citations' },
+        { name: 'Multi-Agent Architectures', level: 'State Machines' },
+        { name: 'Transformers.js / Xenova', level: 'Offline Inference' },
+        { name: 'Sentence Transformers', level: 'Semantic Search' },
+        { name: 'LangChain & LangGraph', level: 'Workflows' }
       ]
     },
     {
-      title: 'DevOps & Tooling',
+      title: 'DevOps, Testing & Tooling',
       icon: Wrench,
-      badge: 'Workflow',
+      badge: 'Quality & CI/CD',
       color: 'cyan',
       skills: [
-        { name: 'Docker', level: 'Containers' },
-        { name: 'Git & GitHub', level: 'Version Control' },
-        { name: 'Postman', level: 'API Testing' },
-        { name: 'Linux / Bash', level: 'Systems' },
-        { name: 'PyQt6 & PyQtGraph', level: 'Desktop GUI' },
-        { name: 'OpenCV', level: 'Computer Vision' }
+        { name: 'Docker & Containerization', level: 'Production' },
+        { name: 'Playwright (E2E Testing)', level: 'Automated QA' },
+        { name: 'Git & GitHub Actions (CI/CD)', level: 'DevOps' },
+        { name: 'Vercel Deployment', level: 'Cloud Edge' },
+        { name: 'Puppeteer (Stealth Scraping)', level: 'OSINT Automation' },
+        { name: 'Postman & Swagger UI', level: 'API Testing' }
       ]
     }
   ];
@@ -113,7 +111,7 @@ const Skills = () => {
             Skills & <span className="text-gradient-primary">Technologies</span>
           </h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-xl mt-3 text-sm sm:text-base">
-            Categorized by practical, hands-on production application rather than checklist theoretical familiarity.
+            Categorized by practical, hands-on production application across AI systems, full-stack web, and database scaling.
           </p>
         </div>
 

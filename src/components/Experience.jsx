@@ -5,37 +5,36 @@ import { Briefcase, Calendar, MapPin, CheckCircle2, Terminal, ArrowUpRight } fro
 const Experience = () => {
   const experiences = [
     {
-      role: 'AI Automation Developer',
+      role: 'Software Engineer (AI & Full-Stack)',
       company: 'Miraaj Associates',
       type: 'Full-time',
       location: 'Delhi, India (On-site)',
-      period: 'Sep 2026 – Present',
-      current: true,
-      description: 'Architecting intelligent business process automation pipelines, integrating custom Python backend services with internal ERPs, and building agentic workflows to eliminate repetitive operational bottlenecks.',
+      period: 'Aug 2026 – Oct 2026 (3 months)',
+      current: false,
+      description: 'Architecting autonomous regulatory intelligence platforms, multi-turn legal RAG copilots, and enterprise AI automation services connecting judicial databases with internal workflows.',
       achievements: [
-        'Architected AI-driven automation pipelines and agentic integrations using Python and FastAPI to streamline enterprise operations.',
-        'Engineered backend middleware connecting proprietary ERP systems with automated data processing and validation pipelines.',
-        'Built scalable background task dispatchers and scheduled worker queues for automated report generation and real-time alerts.',
-        'Collaborated directly with cross-functional business units to identify workflow friction and deliver rapid software solutions.'
+        'Architected Cyber Law Watch Agent (LexSentry), an async full-stack regulatory intelligence platform using FastAPI, SQLAlchemy 2.0 (aiosqlite), and Next.js 14 to ingest, filter, and priority-score (P0–P2) rulings across 8 judicial and regulatory sources (Supreme Court, High Courts, RBI, CERT-In).',
+        'Engineered a multi-turn Legal RAG Copilot using async Gemini API calls with source-grounded PDF citations, automated client advisory drafting, and a local statutory fallback engine for graceful degradation when external LLM APIs are unavailable.',
+        'Built an in-app diagnostics and hot-reload configuration module to validate API keys via live roundtrip latency checks and update runtime backend settings without server restarts, alongside a standalone Windows desktop launcher and Docker deployment setup.',
+        'Designed CMS matter impact mapping cross-referencing incoming rulings against active practice files, generating T-63 associate litigation tasks and court-ready petition clauses under Section 457 Cr.P.C. / Section 503 BNSS.'
       ],
-      skills: ['Python', 'FastAPI', 'AI Automation', 'PostgreSQL', 'Docker', 'ERP Integration', 'REST APIs']
+      skills: ['FastAPI', 'Next.js 14', 'Python', 'Google Gemini API', 'SQLAlchemy 2.0 (Async)', 'LangChain / LangGraph', 'Docker', 'REST APIs']
     },
     {
-      role: 'Software Engineer',
+      role: 'Software Developer',
       company: 'Vision Innovations',
       type: 'Full-time',
       location: 'Kolkata, West Bengal, India (On-site)',
       period: 'Sep 2025 – Aug 2026 (1 year)',
       current: false,
-      description: 'Led the development of high-speed bio-signal acquisition software, camera calibration pipelines, and healthcare microservices processing high-frequency data streams.',
+      description: 'Architected enterprise AI monorepo platforms, multi-agent OSINT pipelines, and high-throughput backend services and PostgreSQL database optimizations.',
       achievements: [
-        'Developed real-time EMG monitoring software using Python, PyQt6, PyQtGraph, and Arduino serial communication, reliably processing bio-signals at 60+ FPS with sub-50ms latency.',
-        'Engineered FastAPI backend microservices and relational PostgreSQL solutions for medical imaging workflows, slashing query latency by 35%.',
-        'Implemented dual data pipeline architecture supporting automated frame capture (.jpg) and high-density array capture (.npz) with structured metadata indexing.',
-        'Designed normalized PostgreSQL schemas with row-level security and indexing for patient imaging records and calibration metrics.',
-        'Created analytics dashboards for real-time monitoring of camera feed metrics, marker detection rates, and system baseline measurements.'
+        'Architected a 2-app TypeScript / Next.js monorepo combining an OSINT contact-attribution engine (Contact Finder) and an AI software blueprint/PRD generator (Project Researcher), deployed live on Vercel.',
+        'Engineered a 4-agent investigation pipeline (Coordinator, Researcher, Extractor, Verifier) combining regex parsing, offline semantic chunking (Transformers.js), Gemini Flash/Vision OCR, and a weighted 0–100% multi-factor identity confidence scoring model.',
+        'Built bulk CSV/PDF dividend statement ingestion workflows with exponential backoff rate-limit handling, OpenRouter LLM fallback, and BYOK (Bring Your Own Key) client-side API key management.',
+        'Deployed FastAPI microservices and optimized PostgreSQL relational schemas and REST API data flows for high-throughput workloads, supporting structured file formats (.jpg, .npz) and real-time feed-quality analytics.'
       ],
-      skills: ['Python', 'FastAPI', 'PyQt6', 'PyQtGraph', 'Arduino Serial', 'PostgreSQL', 'OpenCV', 'Data Pipelines']
+      skills: ['TypeScript', 'Next.js', 'React', 'FastAPI', 'Python', 'Google Gemini API', 'Transformers.js', 'Puppeteer', 'PostgreSQL', 'SQLite']
     },
     {
       role: 'Software Engineer Intern',
@@ -46,10 +45,10 @@ const Experience = () => {
       current: false,
       description: 'Built vector similarity search pipelines, natural language processing models, and containerized backend services for automated medicine matching.',
       achievements: [
-        'Developed an NLP-based medicine matching system using Hugging Face Sentence Transformers and vector similarity, achieving 95%+ matching accuracy.',
-        'Optimized vector database queries and cosine similarity search algorithms, achieving 40% faster information retrieval.',
-        'Developed containerized FastAPI microservices and PostgreSQL schemas for embeddings storage and semantic text search.',
-        'Managed Dockerized development environments and created automated testing scripts for API endpoint validation.'
+        'Engineered an NLP-based medicine matching engine using Hugging Face Sentence Transformers and cosine similarity to retrieve pharmacologically equivalent alternatives when exact matches were unavailable.',
+        'Built FastAPI vector-search services and automated data extraction pipelines across medicine and inventory domains for embedding-based fuzzy matching.',
+        'Containerized the NLP stack with Docker and managed embedding storage and indexed similarity queries in PostgreSQL.',
+        'Optimized similarity search algorithms and database indexing to deliver sub-100ms vector lookup responses across medical formulation datasets.'
       ],
       skills: ['Python', 'FastAPI', 'Hugging Face', 'Sentence Transformers', 'Vector Search', 'PostgreSQL', 'Docker']
     }
@@ -69,7 +68,7 @@ const Experience = () => {
             Professional <span className="text-gradient-primary">Experience</span>
           </h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-xl mt-3 text-sm sm:text-base">
-            Hands-on software engineering across AI automation, real-time medical hardware systems, and NLP vector search.
+            Hands-on software engineering across autonomous AI systems, multi-agent OSINT pipelines, and NLP vector search.
           </p>
         </div>
 

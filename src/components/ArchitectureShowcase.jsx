@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Terminal, Copy, Check, Code2, Cpu, Database, Activity } from 'lucide-react';
+import { Terminal, Copy, Check, Code2, Cpu, Database, Shield } from 'lucide-react';
 
 const ArchitectureShowcase = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -8,82 +8,107 @@ const ArchitectureShowcase = () => {
 
   const snippets = [
     {
-      title: 'Real-Time EMG Serial Pipeline',
-      filename: 'emg_stream_worker.py',
-      language: 'Python / PyQt6 / Serial',
-      icon: Activity,
-      context: 'Processing bio-signals at 60+ FPS with sub-50ms latency without blocking the Qt main GUI loop.',
-      solution: 'Used QThread worker with a circular ring-buffer to ingest raw serial packets from Arduino, decouple hardware I/O, and push batched vectors to PyQtGraph.',
-      code: `import serial
-from PyQt6.QtCore import QThread, pyqtSignal
-import numpy as np
+      title: 'Legal RAG Copilot & Fallback Engine',
+      filename: 'legal_rag_copilot.py',
+      language: 'FastAPI / Gemini API / Async',
+      icon: Cpu,
+      context: 'Delivering sub-second legal query intelligence with certified PDF citations and 100% uptime when external LLM APIs fail or have rate limits.',
+      solution: 'Implemented an async RAG pipeline in FastAPI that grounds queries against indexed judicial precedents, with an automatic fallback mechanism returning verified statutory ratios.',
+      code: `from fastapi import FastAPI, HTTPException
+import httpx
+from app.models import PrecedentRatio
+from app.config import settings
 
-class EMGSerialWorker(QThread):
-    data_packet_received = pyqtSignal(np.ndarray)
-    
-    def __init__(self, port="COM3", baudrate=115200, buffer_size=128):
-        super().__init__()
-        self.port = port
-        self.baudrate = baudrate
-        self.buffer_size = buffer_size
-        self._running = True
+class LegalRAGCopilot:
+    """
+    Multi-turn Legal RAG Copilot with dual-quoted PDF citations 
+    and local statutory ratio fallback for graceful degradation.
+    """
+    def __init__(self, gemini_api_key: str | None = None):
+        self.api_key = gemini_api_key or settings.GEMINI_API_KEY
+        self.model = "gemini-2.5-flash"
 
-    def run(self):
-        # Establish non-blocking serial communication with Arduino
-        with serial.Serial(self.port, self.baudrate, timeout=0.02) as ser:
-            batch = []
-            while self._running:
-                raw_line = ser.readline().decode('utf-8', errors='ignore').strip()
-                if not raw_line:
-                    continue
-                try:
-                    # Ingest EMG analog voltage reading (0-1023)
-                    val = float(raw_line)
-                    batch.append(val)
-                    if len(batch) >= self.buffer_size:
-                        # Dispatch NumPy array to PyQtGraph renderer (<50ms latency)
-                        self.data_packet_received.emit(np.array(batch, dtype=np.float32))
-                        batch = []
-                except ValueError:
-                    continue`
+    async def query_copilot(self, question: str, limit: int = 5) -> dict:
+        # 1. Fetch top grounded judicial precedents from async SQLite
+        precedents = await PrecedentRatio.get_relevant_rulings(question, limit=limit)
+        
+        if not self.api_key:
+            # Graceful degradation: Return verified local statutory ratios
+            return {
+                "mode": "FALLBACK_STATUTORY",
+                "answer": self._format_statutory_fallback(question, precedents),
+                "citations": [p.certified_pdf_path for p in precedents]
+            }
+
+        # 2. Construct grounded legal prompt strictly citing authentic court PDFs
+        context_payload = self._build_context(precedents)
+        async with httpx.AsyncClient(timeout=15.0) as client:
+            response = await client.post(
+                f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent",
+                params={"key": self.api_key},
+                json={"contents": [{"parts": [{"text": f"Context: {context_payload}\\nQuery: {question}"}]}]}
+            )
+            return response.json()`
     },
     {
-      title: 'NLP Vector Similarity Service',
-      filename: 'vector_search_service.py',
-      language: 'FastAPI / Sentence-Transformers',
-      icon: Cpu,
-      context: 'Replacing brittle fuzzy-matching with semantic dense vectors for 95%+ medicine lookup accuracy.',
-      solution: 'Loaded Hugging Face all-MiniLM-L6-v2 embeddings once at app startup, normalized query vectors, and executed cosine similarity across catalog embeddings in <15ms.',
-      code: `from fastapi import FastAPI, HTTPException
-from sentence_transformers import SentenceTransformer
-import numpy as np
-from pydantic import BaseModel
+      title: 'Multi-Factor OSINT Confidence Scorer',
+      filename: 'ConfidenceScorer.ts',
+      language: 'TypeScript / OSINT Engine',
+      icon: Shield,
+      context: 'Attributing and verifying Indian phone numbers from fragmented MCA, IEPF dividend, and public registry records without false positives.',
+      solution: 'Engineered a weighted 0–100% confidence algorithm combining string normalization, exact house/flat match, phonetic variant names, and multi-domain authority bonuses.',
+      code: `export interface IdentityProfile {
+  targetName: string;
+  targetAddress: string;
+  city: string;
+  pincode?: string;
+}
 
-app = FastAPI(title="Medicine Semantic Vector Engine")
-# Load transformer model into memory at startup
-model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+export type AttributionType = 'DIRECT_PERSON' | 'PROXY_PERSON' | 'RWA' | 'BROKER' | 'ORGANIZATION';
 
-class MedicineQuery(BaseModel):
-    query_text: str
-    top_k: int = 5
+export class ConfidenceScorer {
+  /**
+   * Multi-factor scoring model:
+   * Score = min(100, max(0, S_Name + S_Address + S_Attribution + S_MultiSource + S_DomainTrust))
+   */
+  public static calculateScore(
+    candidate: { name: string; address: string; attribution: AttributionType; domains: string[] },
+    target: IdentityProfile
+  ): number {
+    let score = 0;
 
-@app.post("/api/v1/search/semantic")
-async def semantic_medicine_search(payload: MedicineQuery):
-    if not payload.query_text.strip():
-        raise HTTPException(status_code=400, detail="Query cannot be empty")
-        
-    # Generate 384-dimensional dense vector representation
-    query_vector = model.encode(payload.query_text, normalize_embeddings=True)
-    
-    # Compute dot product (cosine similarity) with pre-indexed catalog vectors
-    # Achieved 95%+ precision and 40% faster latency over traditional LIKE queries
-    scores = np.dot(CATALOG_EMBEDDINGS, query_vector)
-    top_indices = np.argsort(scores)[::-1][:payload.top_k]
-    
-    return [
-        {"item": CATALOG_ITEMS[i], "confidence": float(scores[i])}
-        for i in top_indices
-    ]`
+    // 1. Name Resolution (Exact match: +30, Variant/Middle: +20)
+    if (candidate.name.toLowerCase() === target.targetName.toLowerCase()) {
+      score += 30;
+    } else if (this.isPhoneticMatch(candidate.name, target.targetName)) {
+      score += 20;
+    }
+
+    // 2. Address & Pincode Anchoring (Exact Flat/House: +40, Locality: +20)
+    if (this.hasExactHouseNumber(candidate.address, target.targetAddress)) {
+      score += 40;
+    } else if (candidate.address.includes(target.city)) {
+      score += 15;
+    }
+
+    // 3. Attribution Type Weighting
+    const attributionWeights: Record<AttributionType, number> = {
+      DIRECT_PERSON: 20,
+      PROXY_PERSON: 10,
+      RWA: 5,
+      BROKER: 5,
+      ORGANIZATION: 3
+    };
+    score += attributionWeights[candidate.attribution] || 0;
+
+    // 4. Multi-Source Independent Verification Bonus (+15 per extra domain)
+    if (candidate.domains.length > 1) {
+      score += (candidate.domains.length - 1) * 15;
+    }
+
+    return Math.min(100, Math.max(0, score));
+  }
+}`
     },
     {
       title: 'Multi-Tenant Schema Isolation',
@@ -137,7 +162,7 @@ CREATE POLICY tenant_isolation_policy ON erp_invoices
             Architecture & <span className="text-gradient-primary">Code in Action</span>
           </h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-xl mt-3 text-sm sm:text-base">
-            Real code snippets demonstrating how I approach hardware serial streaming, vector search, and multi-tenant schema isolation.
+            Real code snippets demonstrating how I approach legal RAG fallback resilience, multi-agent OSINT confidence scoring, and multi-tenant schema isolation.
           </p>
         </div>
 
@@ -202,9 +227,9 @@ CREATE POLICY tenant_isolation_policy ON erp_invoices
             </div>
           </div>
 
-          {/* Code Body */}
-          <div className="p-4 sm:p-6 bg-slate-950 text-slate-200 font-mono text-xs sm:text-[13px] leading-relaxed overflow-x-auto">
-            <pre className="code-font">
+          {/* Code Viewer Body */}
+          <div className="p-4 sm:p-6 bg-white dark:bg-[#070a10] overflow-x-auto text-xs font-mono leading-relaxed text-slate-800 dark:text-slate-200">
+            <pre>
               <code>{currentSnippet.code}</code>
             </pre>
           </div>

@@ -9,10 +9,11 @@ import {
   Briefcase, 
   Mail, 
   FileText,
-  Activity,
   Zap,
   Layers,
-  ArrowUpRight
+  ArrowUpRight,
+  Shield,
+  Cpu
 } from 'lucide-react';
 import { LinkedInIcon, GitHubIcon } from './SocialIcons';
 import { Link } from 'react-scroll';
@@ -28,15 +29,15 @@ const Hero = () => {
   };
 
   const metrics = [
-    { label: 'EMG Signal Streaming', value: '60+ FPS', sub: '<50ms latency via serial', icon: Activity, color: 'text-emerald-500' },
-    { label: 'Query Latency Reduction', value: '35%', sub: 'FastAPI & PostgreSQL indexing', icon: Zap, color: 'text-blue-500' },
-    { label: 'Vector Matching Precision', value: '95%+', sub: 'Hugging Face Transformers', icon: Activity, color: 'text-purple-500' },
-    { label: 'Enterprise ERP Modules', value: '18 APIs', sub: 'Multi-tenant architecture', icon: Layers, color: 'text-amber-500' },
+    { label: 'Production Engineering', value: '1+ Year', sub: 'AI & Full-Stack Systems', icon: Zap, color: 'text-blue-500' },
+    { label: 'Enterprise ERP Modules', value: '18+ APIs', sub: 'Multi-tenant isolation (Zewar)', icon: Layers, color: 'text-amber-500' },
+    { label: 'Regulatory Sources', value: '8+ Courts', sub: 'SC, HCs, RBI, CERT-In (LexSentry)', icon: Shield, color: 'text-purple-500' },
+    { label: 'Multi-Agent Pipeline', value: '4 Agents', sub: 'OSINT & Entity Resolution', icon: Cpu, color: 'text-emerald-500' },
   ];
 
   return (
     <section id="home" className="relative min-h-screen pt-32 pb-20 px-6 dot-grid flex flex-col justify-center overflow-hidden">
-      {/* Subtle background ambient lights (tasteful, not overwhelming) */}
+      {/* Subtle background ambient lights */}
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-blue-500/10 dark:bg-blue-600/10 blur-[130px] rounded-full -z-10 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto w-full">
@@ -52,7 +53,7 @@ const Hero = () => {
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/5 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 text-xs font-mono font-medium mb-6 shadow-xs"
             >
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>Available for Full-Stack & Backend Roles • Noida (Delhi NCR)</span>
+              <span>Available for Roles • Kolkata, Delhi, Noida | Remote & Hybrid</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -62,7 +63,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.12] mb-6"
             >
-              Building scalable <span className="text-gradient-primary">web & ERP systems</span>, real-time pipelines, and robust APIs.
+              Building scalable <span className="text-gradient-primary">AI & Full-Stack Systems</span>, multi-tenant ERPs, and robust APIs.
             </motion.h1>
 
             {/* Human Introduction */}
@@ -72,7 +73,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-8 max-w-2xl"
             >
-              Hi, I'm <strong className="text-slate-900 dark:text-white font-semibold">Raj Poddar</strong> (He/Him). I turn complex operational challenges into dependable software. From processing bio-signals at <strong>60+ FPS with sub-50ms latency</strong> to architecting <strong>18-module multi-tenant ERP platforms</strong> and <strong>vector similarity search pipelines</strong>.
+              Hi, I'm <strong className="text-slate-900 dark:text-white font-semibold">Raj Poddar</strong> (He/Him). I turn complex operational challenges into dependable software. From building <strong>autonomous regulatory intelligence systems</strong> and <strong>4-agent OSINT pipelines</strong> to architecting <strong>18-module multi-tenant ERP platforms</strong> and <strong>vector similarity search engines</strong>.
             </motion.p>
 
             {/* Primary Action Buttons */}
@@ -105,18 +106,31 @@ const Hero = () => {
                 </button>
 
                 {resumeDropdown && (
-                  <div className="absolute left-0 mt-2 w-64 rounded-xl card-crafted p-2 shadow-xl z-30 animate-in fade-in slide-in-from-top-2">
+                  <div className="absolute left-0 mt-2 w-72 rounded-xl card-crafted p-2 shadow-xl z-30 animate-in fade-in slide-in-from-top-2">
+                    <a
+                      href="./resume-ats.html"
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={() => setResumeDropdown(false)}
+                      className="flex flex-col p-2.5 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors bg-blue-50/50 dark:bg-slate-800/40 mb-1"
+                    >
+                      <span className="text-xs font-bold text-blue-700 dark:text-blue-400 flex items-center justify-between">
+                        ATS & AI Resume (Web / Print)
+                        <ArrowUpRight size={13} className="text-blue-500" />
+                      </span>
+                      <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">100% machine-readable, ATS-tested, printable 1-page PDF</span>
+                    </a>
                     <a
                       href="./Raj_Poddar_SoftwareDev.pdf"
                       download
                       onClick={() => setResumeDropdown(false)}
-                      className="flex flex-col p-2.5 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"
+                      className="flex flex-col p-2.5 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors border-t border-slate-100 dark:border-slate-800/80"
                     >
                       <span className="text-xs font-bold text-slate-900 dark:text-white flex items-center justify-between">
-                        Software Developer CV
+                        Software Developer CV (PDF)
                         <Download size={13} className="text-blue-500" />
                       </span>
-                      <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">Full-Stack, Python, React, PostgreSQL, Real-Time</span>
+                      <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">Full-Stack, Next.js, Python, FastAPI, PostgreSQL, RAG</span>
                     </a>
                     <a
                       href="./Raj_Poddar_Data_Analyst_Resume-compressed.pdf"
@@ -125,7 +139,7 @@ const Hero = () => {
                       className="flex flex-col p-2.5 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors border-t border-slate-100 dark:border-slate-800/80 mt-1"
                     >
                       <span className="text-xs font-bold text-slate-900 dark:text-white flex items-center justify-between">
-                        Data & Analytics Resume
+                        Data & Analytics Resume (PDF)
                         <Download size={13} className="text-purple-500" />
                       </span>
                       <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">EDA, Machine Learning, Dashboards</span>
@@ -168,7 +182,7 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          {/* Right Column: Personal Profile Card (Human, Crafted, Not AI-slop) */}
+          {/* Right Column: Personal Profile Card */}
           <div className="lg:col-span-5 flex justify-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -207,31 +221,31 @@ const Hero = () => {
                     Raj Poddar
                   </h3>
                   <p className="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-0.5">
-                    Full-Stack Software Engineer
+                    Full-Stack & AI Software Engineer
                   </p>
                   <p className="text-xs text-slate-500 dark:text-slate-400 flex items-center justify-center sm:justify-start gap-1 mt-2">
                     <MapPin size={13} className="text-red-500 shrink-0" />
-                    <span>Noida, Uttar Pradesh, India</span>
+                    <span>Kolkata • Delhi NCR • Noida</span>
                   </p>
                   <div className="flex items-center justify-center sm:justify-start gap-1 text-[11px] text-slate-500 dark:text-slate-400 mt-1">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                    <span>1,470+ LinkedIn Network</span>
+                    <span>2,056+ LinkedIn Network</span>
                   </div>
                 </div>
               </div>
 
-              {/* Current Role Callout */}
+              {/* Recent Role Callout */}
               <div className="p-3.5 rounded-xl bg-blue-50/70 dark:bg-slate-800/60 border border-blue-100 dark:border-blue-900/40 mb-5">
                 <div className="flex items-center gap-2 text-xs font-semibold text-blue-700 dark:text-blue-300 mb-1">
                   <Briefcase size={14} />
-                  <span>Current Role</span>
+                  <span>Recent Role</span>
                 </div>
                 <div className="text-sm font-bold text-slate-900 dark:text-white">
-                  AI Automation Developer
+                  Software Engineer (AI & Full-Stack)
                 </div>
                 <div className="text-xs text-slate-600 dark:text-slate-400 flex items-center justify-between mt-0.5">
                   <span>Miraaj Associates • Delhi, India</span>
-                  <span className="font-mono text-[11px] text-emerald-600 dark:text-emerald-400 font-medium">Present</span>
+                  <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 font-medium">Aug 2026 – Oct 2026</span>
                 </div>
               </div>
 
@@ -241,7 +255,7 @@ const Hero = () => {
                   Primary Arsenal
                 </div>
                 <div className="flex flex-wrap gap-1.5">
-                  {['Python', 'FastAPI', 'React', 'Next.js', 'Node.js', 'PostgreSQL', 'Docker', 'REST APIs', 'Vector Search'].map((tag, i) => (
+                  {['TypeScript', 'Next.js 14', 'Python', 'FastAPI', 'React', 'PostgreSQL', 'Docker', 'Google Gemini', 'SQLAlchemy', 'REST APIs'].map((tag, i) => (
                     <span
                       key={i}
                       className="px-2.5 py-1 rounded-lg text-xs font-mono font-medium bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200/60 dark:border-slate-700/60"

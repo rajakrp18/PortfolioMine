@@ -15,24 +15,24 @@ import {
 const About = () => {
   const highlights = [
     {
-      title: 'Real-Time Systems & Hardware Streaming',
-      desc: 'Engineered Python serial pipelines (PyQt6/PyQtGraph + Arduino) streaming bio-signals at 60+ FPS with sub-50ms latency.',
-      tag: 'Python / Serial'
+      title: 'Autonomous Regulatory AI & Legal RAG',
+      desc: 'Architected Cyber Law Watch Agent (LexSentry), ingesting precedents across 8 judicial bodies with dual-source citations and fallback ratio engine.',
+      tag: 'FastAPI / RAG'
     },
     {
-      title: 'High-Throughput Backends & Database Tuning',
-      desc: 'Built FastAPI microservices and optimized PostgreSQL schema indexes for medical imaging workflows, reducing query latency by 35%.',
-      tag: 'FastAPI / PostgreSQL'
+      title: 'Multi-Agent OSINT & Entity Resolution',
+      desc: 'Engineered 4-agent TypeScript pipeline combining regex, Transformers.js offline embeddings, Gemini Vision OCR, and weighted confidence scoring.',
+      tag: 'TypeScript / OSINT'
     },
     {
-      title: 'NLP & Vector Similarity Search',
-      desc: 'Engineered a medicine matching engine using Hugging Face Sentence Transformers and vector embeddings with 95%+ precision and 40% faster retrieval.',
-      tag: 'Vector Search / NLP'
+      title: 'Multi-Tenant ERP Architecture (Zewar Desk)',
+      desc: 'Built 18+ modular REST APIs with JWT HTTP-only cookies, RBAC authorization, React Query caching, and Playwright automated E2E tests.',
+      tag: 'Next.js / Express'
     },
     {
-      title: 'Multi-Tenant ERP Platforms',
-      desc: 'Architected multi-tenant cloud platforms comprising 18 modular API microservices handling inventory, billing, CRM, and audit logging.',
-      tag: 'Full-Stack / ERP'
+      title: 'High-Throughput Backends & Vector Search',
+      desc: 'Engineered FastAPI microservices, PostgreSQL index tuning for high-frequency writes, and Hugging Face Sentence Transformer semantic search.',
+      tag: 'PostgreSQL / NLP'
     }
   ];
 
@@ -67,7 +67,7 @@ const About = () => {
             Pragmatic Engineering, <span className="text-gradient-primary">Measurable Impact</span>.
           </h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mt-3 text-sm sm:text-base">
-            From low-level serial streams to multi-tenant cloud architectures — here is who I am, what I build, and how I think.
+            From autonomous AI systems and multi-agent pipelines to multi-tenant cloud architectures — here is who I am, what I build, and how I think.
           </p>
         </div>
 
@@ -85,25 +85,25 @@ const About = () => {
             <div className="card-crafted rounded-2xl p-6 sm:p-8 space-y-5">
               <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
                 <span>The Story So Far</span>
-                <span className="text-xs font-mono text-blue-600 dark:text-blue-400 font-semibold px-2 py-0.5 rounded bg-blue-50 dark:bg-slate-800">Full-Stack & Backend</span>
+                <span className="text-xs font-mono text-blue-600 dark:text-blue-400 font-semibold px-2 py-0.5 rounded bg-blue-50 dark:bg-slate-800">AI & Full-Stack</span>
               </h3>
 
               <p>
-                I'm a <strong className="text-slate-900 dark:text-white">Full-Stack Software Engineer</strong> based in Noida (Delhi NCR), holding a Master of Computer Applications (MCA) and a Bachelor’s in Computer Science. My primary engineering focus revolves around backend architecture, real-time data pipelines, REST APIs, and responsive full-stack applications.
+                I'm a <strong className="text-slate-900 dark:text-white">Full-Stack & AI Software Engineer</strong> with roots in Kolkata and Delhi NCR (Noida), holding a Master of Computer Applications (MCA) and a Bachelor’s in Computer Science. My primary engineering focus revolves around autonomous AI agents, legal RAG systems, multi-tenant cloud architectures, and high-throughput REST APIs.
               </p>
 
               <p>
-                I've always been drawn to the plumbing of software systems — what happens beneath the surface when data needs to move swiftly, reliably, and without failure. Whether it's writing <strong>Arduino serial stream handlers in Python to render 60+ FPS bio-signals with sub-50ms latency</strong>, or optimizing <strong>PostgreSQL indexing for medical imaging workflows to slash query response times by 35%</strong>, I care deeply about latency, data integrity, and pragmatic system design.
+                I care deeply about architecture, latency, and operational resilience. Whether it's designing <strong>autonomous regulatory intelligence systems (LexSentry) with source-grounded RAG</strong>, engineering <strong>4-agent OSINT engines (Contact Finder) with offline vector chunking</strong>, or implementing <strong>airtight multi-tenant PostgreSQL schema isolation with RBAC (Zewar Desk)</strong>, I focus on delivering dependable, production-tested software.
               </p>
 
               <p>
-                Currently, I work as an <strong className="text-slate-900 dark:text-white">AI Automation Developer at Miraaj Associates</strong>, engineering intelligent agentic workflows and full-stack integrations that eliminate manual operations. Before this, I developed production backend services at Vision Innovations and engineered NLP vector similarity engines at Weloin Global.
+                Recently, I worked as a <strong className="text-slate-900 dark:text-white">Software Engineer (AI & Full-Stack) at Miraaj Associates</strong>, engineering autonomous regulatory intelligence platforms, legal RAG copilots, and full-stack integrations. Previously, I developed AI monorepos and high-throughput backend services at Vision Innovations and engineered NLP vector similarity search engines at Weloin Global.
               </p>
 
               <div className="pt-2 border-t border-slate-200 dark:border-slate-800/80 flex flex-wrap gap-2 text-xs font-mono text-slate-500 dark:text-slate-400">
-                <span className="flex items-center gap-1">📍 Noida & Kolkata</span>
+                <span className="flex items-center gap-1">📍 Kolkata, Delhi & Noida</span>
                 <span>•</span>
-                <span className="flex items-center gap-1">💼 On-site, Hybrid, or Remote</span>
+                <span className="flex items-center gap-1">💼 Remote & Hybrid Friendly</span>
                 <span>•</span>
                 <span className="flex items-center gap-1">⚡ He / Him</span>
               </div>
@@ -192,28 +192,28 @@ const About = () => {
                 <div className="flex items-start gap-2.5">
                   <span className="font-mono text-slate-400 font-bold shrink-0">01.</span>
                   <div>
-                    <strong className="text-slate-900 dark:text-white">Favorite Stack:</strong> Python (FastAPI) + PostgreSQL on the backend; React & Next.js on the frontend.
+                    <strong className="text-slate-900 dark:text-white">Favorite Stack:</strong> Next.js 14, TypeScript & Tailwind CSS on the frontend; Python (FastAPI) & PostgreSQL on the backend.
                   </div>
                 </div>
 
                 <div className="flex items-start gap-2.5">
                   <span className="font-mono text-slate-400 font-bold shrink-0">02.</span>
                   <div>
-                    <strong className="text-slate-900 dark:text-white">Engineering Principle:</strong> Measure actual query times and serial bottlenecks before adding premature complexity.
+                    <strong className="text-slate-900 dark:text-white">Engineering Principle:</strong> Build resilient architectures with graceful degradation, zero-hallucination constraints, and verified automated tests.
                   </div>
                 </div>
 
                 <div className="flex items-start gap-2.5">
                   <span className="font-mono text-slate-400 font-bold shrink-0">03.</span>
                   <div>
-                    <strong className="text-slate-900 dark:text-white">Location Flexibility:</strong> Living in Noida, open to On-site, Hybrid, and Remote roles across India & globally.
+                    <strong className="text-slate-900 dark:text-white">Location Preference:</strong> Kolkata, Delhi, Noida — open to On-site, Hybrid, and Remote roles.
                   </div>
                 </div>
 
                 <div className="flex items-start gap-2.5">
                   <span className="font-mono text-slate-400 font-bold shrink-0">04.</span>
                   <div>
-                    <strong className="text-slate-900 dark:text-white">Open Source & Community:</strong> 1,470+ LinkedIn professional network, active code contributor.
+                    <strong className="text-slate-900 dark:text-white">Open Source & Community:</strong> 2,056+ LinkedIn professional network, active code contributor.
                   </div>
                 </div>
               </div>

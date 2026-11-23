@@ -123,7 +123,7 @@ const Navbar = () => {
         <div className="lg:hidden w-full nav-glass border-b border-slate-200 dark:border-slate-800 px-6 py-5 flex flex-col gap-3 animate-in slide-in-from-top-4 duration-200">
           <div className="flex items-center gap-2 pb-3 mb-1 border-b border-slate-200 dark:border-slate-800 text-xs font-mono text-emerald-600 dark:text-emerald-400 font-medium">
             <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-            Currently based in Noida • Open to Work
+            Kolkata • Delhi • Noida • Remote & Hybrid
           </div>
           {navLinks.map((link) => (
             <Link

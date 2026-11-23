@@ -50,7 +50,7 @@ const Contact = () => {
             Let's Build Something <span className="text-gradient-primary">Remarkable</span>
           </h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-xl mt-3 text-sm sm:text-base">
-            Whether you have a full-stack software role, need backend architecture consultation, or just want to discuss low-latency systems — my inbox is always open.
+            Whether you have a full-stack or AI engineering role, need backend architecture consultation, or want to discuss scalable systems — my inbox is always open.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ const Contact = () => {
                 Open for Engineering Roles
               </h3>
               <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                Actively considering Full-Stack Software Engineer, Backend Engineer, and Python Developer positions across <strong>Noida / Delhi NCR, Kolkata, or Remote</strong>.
+                Actively considering Full-Stack Software Engineer, AI Engineer, and Backend Developer positions across <strong>Kolkata, Delhi, Noida, Remote, or Hybrid</strong>.
               </p>
               <div className="flex items-center gap-2 text-[11px] font-mono text-slate-500 dark:text-slate-400">
                 <Clock size={13} className="text-slate-400" />
@@ -146,10 +146,10 @@ const Contact = () => {
                 <div>
                   <span className="text-xs text-slate-500 dark:text-slate-400 block font-mono">Location Base</span>
                   <span className="text-sm font-semibold text-slate-900 dark:text-white">
-                    Noida, Uttar Pradesh, India
+                    Kolkata • Delhi NCR • Noida
                   </span>
                   <span className="text-[11px] text-slate-500 dark:text-slate-400 block">
-                    (Open to On-site, Hybrid, & Remote)
+                    (Preferred: Kolkata, Delhi, Noida | Remote & Hybrid)
                   </span>
                 </div>
               </div>

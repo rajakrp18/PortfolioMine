@@ -8,7 +8,7 @@ import Projects from './components/Projects';
 import ArchitectureShowcase from './components/ArchitectureShowcase';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-import { Download, Mail, ArrowUp, Heart } from 'lucide-react';
+import { Download, Mail, ArrowUp, Heart, FileText } from 'lucide-react';
 import { LinkedInIcon, GitHubIcon } from './components/SocialIcons';
 import { Link } from 'react-scroll';
 
@@ -44,11 +44,11 @@ function MainLayout() {
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-md leading-relaxed">
-                Full-Stack Software Engineer specializing in Python, FastAPI, React, Next.js, and PostgreSQL. Engineering real-time systems, multi-tenant ERP platforms, and semantic search pipelines.
+                Full-Stack & AI Software Engineer specializing in Next.js, TypeScript, Python, FastAPI, and PostgreSQL. Engineering autonomous AI systems, multi-tenant ERP platforms, and scalable data pipelines.
               </p>
               <div className="flex items-center gap-2 text-xs font-mono text-emerald-600 dark:text-emerald-400 pt-1">
                 <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-                <span>Based in Noida, Uttar Pradesh, India • Available for Opportunities</span>
+                <span>Preferred Locations: Kolkata, Delhi, Noida • Remote & Hybrid</span>
               </div>
             </div>
 
@@ -98,12 +98,21 @@ function MainLayout() {
               </h4>
               <div className="space-y-3 text-xs sm:text-sm">
                 <a
-                  href="./Raj_Poddar_SoftwareDev.pdf"
-                  download
+                  href="./resume-ats.html"
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex items-center gap-1.5 text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 >
+                  <FileText size={14} />
+                  <span>ATS & AI Resume (Web / Print)</span>
+                </a>
+                <a
+                  href="./Raj_Poddar_SoftwareDev.pdf"
+                  download
+                  className="flex items-center gap-1.5 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
+                >
                   <Download size={14} />
-                  <span>Software Developer CV</span>
+                  <span>Software Developer CV (PDF)</span>
                 </a>
                 <a
                   href="./Raj_Poddar_Data_Analyst_Resume-compressed.pdf"

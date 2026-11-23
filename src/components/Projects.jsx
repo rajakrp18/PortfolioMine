@@ -1,71 +1,86 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FileText, ExternalLink, Activity, Database, Cpu, Layers, ArrowUpRight, Check } from 'lucide-react';
+import { 
+  FileText, 
+  ExternalLink, 
+  Database, 
+  Cpu, 
+  Layers, 
+  ArrowUpRight, 
+  Shield, 
+  Search, 
+  Activity 
+} from 'lucide-react';
+import { GitHubIcon } from './SocialIcons';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const categories = ['All', 'Systems & Real-Time', 'AI & Vector Search', 'Full-Stack & ERP'];
+  const categories = ['All', 'Applied AI & RAG', 'Full-Stack & ERP', 'Systems & Search'];
 
   const projects = [
     {
-      title: 'Real-Time EMG Bio-Signal Monitoring & Visualization System',
-      category: 'Systems & Real-Time',
-      badge: 'Hardware & Systems',
-      period: 'Vision Innovations',
-      metrics: '60+ FPS • <50ms Latency',
-      techStack: ['Python', 'PyQt6', 'PyQtGraph', 'Arduino Serial', 'Multi-threading', 'Signal Processing'],
-      description: 'High-frequency desktop software capturing bio-electrical signals through Arduino serial communication, plotting real-time EMG waveforms with zero UI freeze.',
-      highlights: [
-        'Implemented non-blocking multi-threaded serial buffer preventing UI stutter at 60+ frames per second.',
-        'Engineered live baseline measurement algorithms and digital filtering for noise suppression.',
-        'Architected structured session logging with automated data exports for clinical evaluation.'
-      ],
-      icon: Activity,
-      color: 'blue'
-    },
-    {
-      title: 'NLP Semantic Medicine Matching & Vector Search Engine',
-      category: 'AI & Vector Search',
-      badge: 'Vector Search / NLP',
-      period: 'Weloin Global',
-      metrics: '95%+ Precision • 40% Faster',
-      techStack: ['Python', 'FastAPI', 'Hugging Face', 'Sentence Transformers', 'Vector Embeddings', 'Docker'],
-      description: 'Intelligent semantic search service mapping complex pharmaceutical names and medicine formulations using dense vector representations rather than naive regex.',
-      highlights: [
-        'Utilized Hugging Face Sentence Transformers to encode catalog items into high-dimensional embedding spaces.',
-        'Implemented cosine similarity ranking and indexed vector lookups, accelerating query retrieval by 40%.',
-        'Built containerized FastAPI REST endpoints tested against extensive medical formulation datasets.'
-      ],
-      icon: Cpu,
-      color: 'purple'
-    },
-    {
-      title: 'Enterprise Multi-Tenant Cloud ERP Platform',
+      title: 'Zewar Desk — Multi-Tenant Jewellery ERP',
       category: 'Full-Stack & ERP',
-      badge: 'Enterprise Architecture',
-      period: 'Production System',
-      metrics: '18 Modular APIs',
-      techStack: ['Node.js', 'Express', 'React', 'PostgreSQL', 'Docker', 'Tailwind CSS', 'REST APIs'],
-      description: 'End-to-end multi-tenant business operating system featuring 18 independent API modules for inventory lifecycle, automated billing, CRM, and financial accounting.',
+      badge: 'Flagship ERP',
+      period: 'Independent Product',
+      metrics: '18 Modular APIs • 4 Domains',
+      techStack: ['Next.js 14', 'TypeScript', 'Express.js', 'PostgreSQL', 'Tailwind CSS', 'Zustand', 'React Query', 'Playwright'],
+      description: 'Production-ready multi-tenant ERP platform architected across 4 core business domains: inventory lifecycle, automated billing, customer CRM, and reporting with airtight tenant data isolation.',
       highlights: [
-        'Architected clean multi-tenant relational schema in PostgreSQL ensuring complete organization data isolation.',
-        'Built 18 RESTful microservices managing automated GST invoice generation, stock ledgers, and audit trails.',
-        'Created responsive React dashboard with granular role-based permissions (RBAC) and real-time alerts.'
+        'Architected 18+ modular REST APIs and per-company/per-fiscal-year database isolation to enforce role-scoped authorization.',
+        'Implemented JWT HTTP-only cookie authentication and RBAC middleware securing workflows across admin, staff, and billing tiers.',
+        'Built 50+ frontend views with React Query and Zustand for client cache synchronization and automated E2E flows with Playwright.'
       ],
+      githubLink: 'https://github.com/rajakrp18',
       icon: Layers,
       color: 'amber'
     },
     {
-      title: 'Medical Imaging Auto-Calibration & Capture Pipeline',
-      category: 'Systems & Real-Time',
-      badge: 'Pipeline Engineering',
-      period: 'Vision Innovations',
-      metrics: '35% Latency Drop',
-      techStack: ['Python', 'FastAPI', 'PostgreSQL', 'OpenCV', 'NumPy', 'File Storage'],
-      description: 'Automated data collection and calibration pipeline managing dual-format capture (.jpg for quick inspection, .npz for raw multi-dimensional matrix data) and real-time camera telemetry.',
+      title: 'Cyber Law Watch Agent (LexSentry)',
+      category: 'Applied AI & RAG',
+      badge: 'Regulatory AI & RAG',
+      period: 'Miraaj Associates',
+      metrics: '8 Judicial Sources • Sub-10ms API',
+      techStack: ['FastAPI', 'Next.js 14', 'SQLAlchemy 2.0 (Async)', 'Google Gemini API', 'Docker', 'aiosqlite', 'LangGraph'],
+      description: 'Autonomous regulatory & judicial intelligence platform continuously monitoring Supreme Court & High Court precedents, RBI directions, and CERT-In advisories with automated legal RAG copilot.',
       highlights: [
-        'Optimized PostgreSQL table indexing and query plans for medical imaging schemas, cutting database latency by 35%.',
+        'Continuously ingests, filters, and priority-scores (P0–P2) rulings across 8 authoritative constitutional courts and regulatory bodies.',
+        'Built multi-turn Legal RAG Copilot with source-grounded certified PDF citations and local statutory ratio fallback for 100% offline uptime.',
+        'Engineered in-app API key diagnostics panel with live roundtrip ping testing and in-memory hot-reloading without server restarts.'
+      ],
+      githubLink: 'https://github.com/rajakrp18/cyberlaw-watchdog',
+      icon: Shield,
+      color: 'blue'
+    },
+    {
+      title: 'Contact Finder & Project Researcher (Enterprise Monorepo)',
+      category: 'Applied AI & RAG',
+      badge: 'Multi-Agent Monorepo',
+      period: 'Vision Innovations',
+      metrics: '4-Agent Pipeline • Vercel Live',
+      techStack: ['Next.js', 'TypeScript', 'Transformers.js', 'Google Gemini API', 'Puppeteer', 'SQLite', 'Vercel'],
+      description: 'Enterprise AI monorepo combining an Indian OSINT contact-attribution and phone verification engine with an automated software architecture PRD generator.',
+      highlights: [
+        'Engineered 4-agent investigation pipeline (Coordinator, Researcher, Extractor, Verifier) with 0–100% multi-factor confidence scoring.',
+        'Combined high-speed regex, offline semantic chunking (Transformers.js), and Gemini 3.6 Flash / Vision OCR for obfuscated canvas records.',
+        'Built bulk CSV/PDF dividend record parsing, exponential backoff rate limiting, OpenRouter fallback, and client BYOK key management.'
+      ],
+      githubLink: 'https://github.com/rajakrp18/Project-Researcher',
+      liveLink: 'https://project-researcher-contact-finder.vercel.app',
+      icon: Cpu,
+      color: 'purple'
+    },
+    {
+      title: 'Medical Imaging Data Pipeline & Service',
+      category: 'Systems & Search',
+      badge: 'High-Throughput Systems',
+      period: 'Vision Innovations',
+      metrics: 'Dual-Format Pipeline • Fast Indexing',
+      techStack: ['Python', 'FastAPI', 'PostgreSQL', 'OpenCV', 'NumPy', 'Docker'],
+      description: 'Automated data collection and calibration pipeline managing dual-format capture (.jpg for inspection, .npz for raw multi-dimensional matrix data) and real-time camera telemetry.',
+      highlights: [
+        'Optimized PostgreSQL table indexing and query plans for medical imaging schemas to handle high-frequency writes.',
         'Implemented auto-capture trigger system with real-time marker tracking and FPS health checks.',
         'Structured file storage and hierarchical cataloging allowing instant clinical replay of capture sessions.'
       ],
@@ -73,27 +88,25 @@ const Projects = () => {
       color: 'emerald'
     },
     {
-      title: 'Health Insurance Premium Prediction & Risk Analytics',
-      category: 'Systems & Real-Time',
-      badge: 'Machine Learning',
-      period: 'Academic Thesis',
-      metrics: '83%+ Accuracy',
-      techStack: ['Python', 'Scikit-learn', 'XGBoost', 'Pandas', 'NumPy', 'MERN Stack'],
-      description: 'Predictive regression modeling and exploratory data analysis over 1,300+ customer records to identify critical pricing factors: age, BMI, and smoking habits.',
+      title: 'NLP Semantic Medicine Matching & Vector Search Engine',
+      category: 'Systems & Search',
+      badge: 'Vector Search / NLP',
+      period: 'Weloin Global',
+      metrics: 'Dense Vector Search • Sub-100ms',
+      techStack: ['Python', 'FastAPI', 'Hugging Face', 'Sentence Transformers', 'PostgreSQL', 'Docker'],
+      description: 'Intelligent semantic search service retrieving pharmacologically equivalent alternatives using dense vector representations rather than naive regex.',
       highlights: [
-        'Trained and validated Random Forest and XGBoost regression models reaching 83%+ predictive accuracy.',
-        'Executed deep exploratory data analysis (EDA), handling categorical encoding and multi-feature collinearity.',
-        'Authored comprehensive research paper detailing model evaluation, error residuals, and web integration.'
+        'Utilized Hugging Face Sentence Transformers to encode pharmaceutical items into high-dimensional embedding spaces.',
+        'Implemented cosine similarity ranking and indexed PostgreSQL vector lookups for rapid information retrieval.',
+        'Built containerized FastAPI REST microservices tested against extensive medical formulation datasets.'
       ],
-      docLink: './Thesis.pdf',
-      docName: 'Read Research Thesis (PDF)',
-      icon: FileText,
+      icon: Search,
       color: 'blue'
     },
     {
       title: 'Dairy Distribution Management & Business Analytics',
       category: 'Full-Stack & ERP',
-      badge: 'Full-Stack Platform',
+      badge: 'Production Platform',
       period: 'Production Deployment',
       metrics: '500+ Daily Trans.',
       techStack: ['PHP', 'MySQL', 'JavaScript', 'Bootstrap', 'Analytics'],
@@ -101,7 +114,7 @@ const Projects = () => {
       highlights: [
         'Designed normalized MySQL schema managing customer rosters, daily milk volume metrics, and supplier payments.',
         'Engineered business analytics dashboard delivering real-time revenue curves, debtor summaries, and sales forecasts.',
-        'Replaced error-prone paper ledgers with automated receipt generation and audit logging.'
+        'Replaced manual paper ledgers with automated receipt generation and audit logging.'
       ],
       docLink: './Dairy.pdf',
       docName: 'View Project Documentation (PDF)',
@@ -128,7 +141,7 @@ const Projects = () => {
             Key Software <span className="text-gradient-primary">Projects</span>
           </h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-xl mt-3 text-sm sm:text-base">
-            Real production systems, low-latency pipelines, ERP architectures, and ML models built with measurable impact.
+            Autonomous AI systems, multi-tenant ERP platforms, legal RAG copilot, and high-throughput backend pipelines.
           </p>
 
           {/* Filter Pills */}
@@ -155,7 +168,7 @@ const Projects = () => {
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           <AnimatePresence>
-            {filteredProjects.map((p, idx) => {
+            {filteredProjects.map((p) => {
               const IconComp = p.icon;
               return (
                 <motion.div
@@ -170,9 +183,14 @@ const Projects = () => {
                   <div>
                     {/* Top Meta */}
                     <div className="flex items-center justify-between gap-2 mb-4">
-                      <span className="text-[11px] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-                        {p.badge}
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <div className="w-7 h-7 rounded-lg bg-blue-50 dark:bg-slate-800 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+                          <IconComp size={15} />
+                        </div>
+                        <span className="text-[11px] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                          {p.badge}
+                        </span>
+                      </div>
                       <span className="text-xs font-mono font-bold text-blue-600 dark:text-blue-400">
                         {p.metrics}
                       </span>
@@ -212,18 +230,47 @@ const Projects = () => {
                       ))}
                     </div>
 
-                    {p.docLink && (
-                      <a
-                        href={p.docLink}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
-                      >
-                        <FileText size={14} />
-                        <span>{p.docName}</span>
-                        <ArrowUpRight size={13} />
-                      </a>
-                    )}
+                    {/* Action Links */}
+                    <div className="flex flex-wrap items-center gap-3 pt-1">
+                      {p.liveLink && (
+                        <a
+                          href={p.liveLink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 hover:bg-blue-700 text-white transition-colors shadow-xs"
+                        >
+                          <ExternalLink size={13} />
+                          <span>Live Demo</span>
+                          <ArrowUpRight size={12} />
+                        </a>
+                      )}
+
+                      {p.githubLink && (
+                        <a
+                          href={p.githubLink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors shadow-xs"
+                        >
+                          <GitHubIcon size={13} />
+                          <span>Code Repository</span>
+                          <ArrowUpRight size={12} className="opacity-60" />
+                        </a>
+                      )}
+
+                      {p.docLink && (
+                        <a
+                          href={p.docLink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+                        >
+                          <FileText size={14} />
+                          <span>{p.docName}</span>
+                          <ArrowUpRight size={13} />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </motion.div>
               );
