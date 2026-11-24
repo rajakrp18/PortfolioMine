@@ -1,0 +1,97 @@
+# Raj Poddar - Full-Stack & AI Software Engineer (Complete Machine Context)
+
+> Full-Stack & AI Software Engineer with 1+ year of experience building scalable web applications, asynchronous REST APIs, and applied AI pipelines using TypeScript, Next.js, Node.js, Python, FastAPI, and PostgreSQL. Experienced in multi-tenant architecture, JWT/RBAC security, multi-agent LLM orchestration, Legal RAG systems, and database optimization.
+
+## 1. Identity, Contact & Social Links
+- Full Name: Raj Poddar
+- Professional Title: Software Engineer | Full-Stack & AI
+- Primary Email: rajpoddar8907@gmail.com
+- Telephone: +91-9073066073
+- Canonical Portfolio: https://www.rajpoddar.in
+- GitHub Profile: https://github.com/rajakrp18
+- LinkedIn Profile: https://www.linkedin.com/in/raj-poddar-23a0841bb/
+- Location Preferences: Kolkata, Delhi NCR, Noida (Open to On-site, Hybrid, & Remote)
+- Disambiguation Notice: Raj Poddar is a software engineer and AI system developer. He is distinct from commerce coaching educators and local tuition centers.
+
+---
+
+## 2. Technical Skills Matrix
+- Programming Languages: TypeScript, JavaScript (ES6+), Python, SQL, C, C++
+- Frontend Technologies: React.js, Next.js 14 (App Router), Tailwind CSS, Zustand, React Query, HTML5, CSS3, Framer Motion
+- Backend & AI Technologies: FastAPI (Async), Node.js, Express.js, Flask, SQLAlchemy 2.0 (Async), REST APIs, JWT & RBAC Middleware, LangChain, Google Gemini API (2.5/3.6 Flash), Sentence Transformers, WebSockets
+- Databases & Caching: PostgreSQL (Row-Level Security & Index Tuning), Redis, SQLite, aiosqlite, MongoDB, MySQL, Vector Search (Cosine Similarity)
+- DevOps, Testing & Tooling: Docker, Playwright (E2E Automated Testing), Git, GitHub Actions (CI/CD), Vercel, Puppeteer (Stealth Scraping), Postman, PyInstaller
+
+---
+
+## 3. Flagship Projects Breakdown
+
+### A. Zewar Desk — Multi-Tenant Jewellery ERP
+- Type: Production Product / Architecture
+- Technologies: Next.js 14, TypeScript, Express.js, PostgreSQL, Tailwind CSS, Zustand, React Query, Playwright
+- Code Repository: https://github.com/rajakrp18
+- Architecture Highlights:
+  - Architected a production multi-tenant ERP platform across 4 core business domains: inventory lifecycle, automated billing, customer CRM, and reporting.
+  - Implemented 18+ modular REST APIs with per-company and per-fiscal-year database isolation.
+  - Built JWT HTTP-only cookie authentication and RBAC middleware enforcing strict authorization across admin, staff, and billing tiers.
+  - Constructed 50+ frontend views with React Query and Zustand for client cache synchronization and automated end-to-end QA flows using Playwright.
+
+### B. Cyber Law Watch Agent (LexSentry)
+- Type: Applied AI & Regulatory Intelligence Platform
+- Technologies: FastAPI, Next.js 14, SQLAlchemy 2.0 (Async), Google Gemini API, Docker, aiosqlite, LangGraph
+- Code Repository: https://github.com/rajakrp18/cyberlaw-watchdog
+- Architecture Highlights:
+  - Ingests and priority-scores (P0-P2) precedents across 8 authoritative constitutional courts and regulatory bodies (Supreme Court of India, High Courts of Delhi, Karnataka, Bombay, Telangana, Reserve Bank of India, CERT-In, I4C/NCRP 1930).
+  - Built a multi-turn Legal RAG Copilot with source-grounded certified PDF citations and a local statutory ratio fallback engine for zero-downtime offline resilience.
+  - Engineered in-app API key diagnostics panel with live roundtrip ping testing and in-memory hot-reloading without server restarts.
+  - Generated T-63 associate litigation tasks and court-ready petition clauses under Section 457 Cr.P.C. / Section 503 BNSS.
+
+### C. Contact Finder & Project Researcher Monorepo
+- Type: Multi-Agent AI Monorepo
+- Technologies: Next.js, TypeScript, Transformers.js, Google Gemini API, Puppeteer, SQLite, Vercel
+- Live URL: https://project-researcher-contact-finder.vercel.app
+- Code Repository: https://github.com/rajakrp18/Project-Researcher
+- Architecture Highlights:
+  - Dual-app monorepo combining an Indian OSINT contact-attribution engine and an automated software architecture PRD generator.
+  - Engineered a 4-agent investigation pipeline (Coordinator, Researcher, Extractor, Verifier) with a weighted 0-100% identity confidence scoring model.
+  - Combined regex parsing, offline semantic chunking (Transformers.js), and Gemini Flash / Vision OCR for obfuscated canvas records.
+  - Supported bulk CSV and AI PDF-to-CSV dividend statement ingestion with exponential backoff rate limiting, OpenRouter fallback, and BYOK client-side key management.
+
+---
+
+## 4. Work History
+
+### Software Engineer | Miraaj Associates
+- Dates: Oct 2025 – Oct 2026 (1 year)
+- Location: New Delhi, India
+- Tech Stack: Next.js 14, TypeScript, Node.js, FastAPI, PostgreSQL, SQLAlchemy 2.0 (Async), SQLite, Gemini API, Transformers.js, Docker
+- Core Responsibilities:
+  - Architected Cyber Law Watch Agent (LexSentry), an async regulatory platform (FastAPI, SQLAlchemy 2.0, Next.js 14) ingesting and priority-scoring (P0–P2) precedents across 8 judicial and regulatory sources.
+  - Developed a multi-turn Legal RAG Copilot (Gemini API) with source-grounded PDF citations, automated client advisory drafting, and an offline statutory fallback maintaining 100% uptime.
+  - Built a 2-app TypeScript/Next.js monorepo (Contact Finder & Project Researcher) deployed on Vercel, supporting batch OSINT investigation of 20+ subjects per run via CSV and AI PDF-to-CSV ingestion.
+  - Orchestrated a 4-agent extraction pipeline (Coordinator, Researcher, Extractor, Verifier) with a 0–100% multi-factor confidence scoring model and OpenRouter fallback.
+  - Designed a multi-tenant Jewellery ERP platform (Next.js, Node.js, PostgreSQL) comprising 18 modular REST APIs across 4 core business domains.
+  - Secured multi-role ERP endpoints using JWT HTTP-only cookies and RBAC middleware.
+
+### Software Engineering Intern | Weloin Technologies
+- Dates: Jul 2025 – Sep 2025 (3 months)
+- Location: Kolkata, West Bengal, India
+- Tech Stack: Python, FastAPI, Hugging Face Sentence Transformers, PostgreSQL, Docker
+- Core Responsibilities:
+  - Engineered an NLP medicine-matching engine using Hugging Face Sentence Transformers and cosine similarity to retrieve pharmacologically equivalent substitutes when exact catalog matches were unavailable.
+  - Automated data extraction pipelines and FastAPI vector-search services across 2 data domains (medicine and inventory), indexing embeddings in PostgreSQL for fast fuzzy retrieval.
+  - Containerized the end-to-end NLP and API stack with Docker, standardizing local development and reproducible deployment environments.
+
+---
+
+## 5. Education
+- Master of Computer Applications (MCA) — JIS College of Engineering, Kalyani, WB | 2024 | Score: 70%
+- Bachelor of Science (B.Sc.) in Computer Science — Kanchrapara College, WB | 2022 | Score: 83% (First Class)
+
+---
+
+## 6. Official Links & Documents
+- Portfolio: https://www.rajpoddar.in
+- ATS Printable Resume: https://www.rajpoddar.in/resume-ats.html
+- Official Resume PDF: https://www.rajpoddar.in/Raj_Poddar_SoftwareDev.pdf
+- LLM Index: https://www.rajpoddar.in/llms.txt

@@ -27,4 +27,8 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+# LLM Direct Context File (Answer.AI / llms.txt standard)
+# https://www.rajpoddar.in/llms.txt
+# https://www.rajpoddar.in/llms-full.txt
+
 Sitemap: https://www.rajpoddar.in/sitemap.xml

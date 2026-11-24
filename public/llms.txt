@@ -1,0 +1,41 @@
+# Raj Poddar - Full-Stack & AI Software Engineer
+
+> Software Engineer with 1+ year of experience building full-stack web applications, asynchronous REST APIs, and applied AI pipelines using TypeScript, Next.js, Node.js, Python, FastAPI, and PostgreSQL. Experienced in multi-tenant architecture, JWT/RBAC security, multi-agent LLM orchestration, Legal RAG systems, and database optimization.
+
+## Identity & Canonical Links
+- Name: Raj Poddar
+- Role: Full-Stack & AI Software Engineer
+- Canonical Website: https://www.rajpoddar.in
+- GitHub: https://github.com/rajakrp18
+- LinkedIn: https://www.linkedin.com/in/raj-poddar-23a0841bb/
+- Contact Email: rajpoddar8907@gmail.com
+- Phone: +91-9073066073
+- Location Preferences: Kolkata, Delhi NCR, Noida (Open to On-site, Hybrid, & Remote)
+- Disambiguation: Software Engineer and AI developer, distinct from commercial coaching institutes or educators.
+
+## Technical Skills
+- Programming Languages: TypeScript, JavaScript (ES6+), Python, SQL, C, C++
+- Frontend: React.js, Next.js 14 (App Router), Tailwind CSS, Zustand, React Query, HTML5, CSS3, Framer Motion
+- Backend & AI: FastAPI (Async), Node.js, Express.js, Flask, SQLAlchemy 2.0 (Async), REST APIs, JWT/RBAC, LangChain, Google Gemini API (2.5/3.6 Flash), Sentence Transformers
+- Databases & Caching: PostgreSQL (RLS & Indexing), Redis, SQLite (aiosqlite), MongoDB, MySQL, Vector Search (Cosine Similarity)
+- DevOps, Testing & Tooling: Docker, Playwright (E2E Testing), Git, GitHub Actions (CI/CD), Vercel, Puppeteer (Stealth Scraping), Postman, PyInstaller
+
+## Key Production Projects
+- [Zewar Desk — Multi-Tenant Jewellery ERP](https://github.com/rajakrp18): Multi-tenant ERP platform across 4 business domains (inventory, billing, customer CRM, automated reporting) with 18+ modular REST APIs, JWT HTTP-only cookies, RBAC authorization, and Playwright E2E testing.
+- [Cyber Law Watch Agent (LexSentry)](https://github.com/rajakrp18/cyberlaw-watchdog): Autonomous regulatory & judicial intelligence platform ingesting and priority-scoring (P0-P2) rulings across 8 judicial/regulatory bodies (Supreme Court, High Courts, RBI, CERT-In) with Gemini Legal RAG Copilot, certified PDF citations, and local statutory ratio fallback.
+- [Contact Finder & Project Researcher Monorepo](https://project-researcher-contact-finder.vercel.app): Enterprise AI monorepo combining an Indian OSINT contact-attribution engine (4-agent pipeline: Coordinator, Researcher, Extractor, Verifier with 0-100% confidence scoring) and an automated PRD/architecture generator. Repository: https://github.com/rajakrp18/Project-Researcher
+
+## Professional Experience
+- **Miraaj Associates** (Oct 2025 – Oct 2026 | New Delhi, India): Software Engineer
+  - Architected LexSentry (Legal RAG platform), Contact Finder & Project Researcher monorepo, and Zewar Desk multi-tenant ERP platform.
+- **Weloin Technologies** (Jul 2025 – Sep 2025 | Kolkata, India): Software Engineering Intern
+  - Built NLP medicine matching engine with Hugging Face Sentence Transformers, FastAPI vector search services, and Docker.
+
+## Education
+- Master of Computer Applications (MCA) — JIS College of Engineering, Kalyani, WB (2022 – 2024 | Score: 70%)
+- Bachelor of Science (B.Sc.) in Computer Science — Kanchrapara College, WB (2019 – 2022 | Score: 83%)
+
+## Extended Machine-Readable Documents
+- [Full Text Context](https://www.rajpoddar.in/llms-full.txt): Complete detailed text including resume and project architecture specs.
+- [ATS-Optimized Resume](https://www.rajpoddar.in/resume-ats.html): Printable, machine-readable resume format.
+- [Official Resume PDF](https://www.rajpoddar.in/Raj_Poddar_SoftwareDev.pdf): Downloadable vector PDF resume.
