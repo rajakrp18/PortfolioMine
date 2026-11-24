@@ -1,67 +1,46 @@
-# Raj Poddar
-**Full-Stack & AI Software Engineer**  
-Kolkata • Delhi NCR • Noida (Open to Remote / Hybrid)  
-Phone: +91 9073066073 | Email: rajpoddar8907@gmail.com  
-LinkedIn: [linkedin.com/in/raj-poddar-23a0841bb](https://www.linkedin.com/in/raj-poddar-23a0841bb/) | GitHub: [github.com/rajakrp18](https://github.com/rajakrp18)  
-Portfolio: [rajakrp18.github.io/PortfolioMine](https://rajakrp18.github.io/PortfolioMine/)
+# RAJ PODDAR
+**Software Engineer | Full-Stack & AI | Next.js | TypeScript | Node.js | Python | FastAPI | PostgreSQL**  
+rajpoddar8907@gmail.com | +91-9073066073 | [Portfolio](https://www.rajpoddar.in) | [GitHub](https://github.com/rajakrp18) | [LinkedIn](https://www.linkedin.com/in/raj-poddar-23a0841bb/)
 
 ---
 
-## Technical Skills
-- **Languages:** TypeScript, JavaScript (ES6+), Python, SQL, C++, HTML5, CSS3
-- **Frontend:** Next.js 14 (App Router), React 18, Tailwind CSS, Zustand, React Query, Framer Motion, Responsive UI
-- **Backend:** FastAPI (Async), Node.js, Express.js, REST APIs, SQLAlchemy 2.0 (Async), JWT & RBAC Middleware, WebSockets
-- **Databases & Caching:** PostgreSQL (RLS & Indexing), Redis, SQLite / aiosqlite, MySQL, Vector Search (Cosine Similarity)
-- **AI & Multi-Agent:** Google Gemini API (2.5/3.6 Flash), Legal & Enterprise RAG, LangChain, LangGraph, Transformers.js, Sentence Transformers
-- **DevOps & Testing:** Docker, Playwright (E2E Testing), Git, GitHub Actions (CI/CD), Vercel, Puppeteer (Stealth Scraping), Postman
+## PROFESSIONAL SUMMARY
+Software Engineer with 1+ year of experience building full-stack web applications, asynchronous REST APIs, and applied AI pipelines using TypeScript, Next.js, Node.js, Python, FastAPI, and PostgreSQL. Experienced in multi-tenant architecture, JWT/RBAC security, multi-agent LLM orchestration, Legal RAG systems, and database optimization.
 
 ---
 
-## Professional Experience
-
-### Miraaj Associates — Software Engineer (AI & Full-Stack)
-*Aug 2026 – Oct 2026 | New Delhi, India*
-- Architected **Cyber Law Watch Agent (LexSentry)**, an async full-stack regulatory intelligence platform using FastAPI, SQLAlchemy 2.0 (aiosqlite), and Next.js 14 to ingest, filter, and priority-score (P0–P2) rulings across 8 judicial/regulatory bodies (Supreme Court, High Courts, RBI, CERT-In).
-- Engineered a multi-turn **Legal RAG Copilot** using async Gemini API calls with source-grounded certified PDF citations, automated client advisory drafting, and a local statutory fallback ratio engine for graceful degradation when external LLM APIs are unavailable.
-- Built an in-app diagnostics and hot-reload configuration module to validate API keys via live roundtrip latency checks and update runtime backend settings without server restarts, alongside a standalone Windows desktop launcher and Docker deployment setup.
-- Designed CMS matter impact mapping cross-referencing incoming rulings against active practice files, generating T-63 associate litigation tasks and court-ready petition clauses under Section 457 Cr.P.C. / Section 503 BNSS.
-
-### Vision Innovations — Software Developer
-*Sep 2025 – Aug 2026 | Kolkata, India*
-- Architected a 2-app **TypeScript / Next.js monorepo** combining an OSINT contact-attribution engine (Contact Finder) and an AI software blueprint/PRD generator (Project Researcher), deployed live on Vercel.
-- Engineered a 4-agent investigation pipeline (Coordinator, Researcher, Extractor, Verifier) combining regex parsing, offline semantic chunking (Transformers.js), Gemini Flash/Vision OCR, and a weighted 0–100% multi-factor identity confidence scoring model.
-- Built bulk CSV/PDF dividend statement ingestion workflows with exponential backoff rate-limit handling, OpenRouter LLM fallback, and client BYOK (Bring Your Own Key) API key management.
-- Deployed FastAPI microservices and optimized PostgreSQL relational schemas and REST API data flows for high-throughput workloads, supporting structured file formats (.jpg, .npz) and real-time feed-quality analytics.
-
-### Weloin Technologies — Software Engineering Intern
-*Jul 2025 – Sep 2025 | Kolkata, India*
-- Engineered an NLP-based medicine matching engine using Hugging Face Sentence Transformers and cosine similarity to retrieve pharmacologically equivalent alternatives when exact matches were unavailable.
-- Built FastAPI vector-search services and automated data extraction pipelines across medicine and inventory domains for embedding-based fuzzy matching.
-- Containerized the NLP stack with Docker and managed embedding storage and indexed similarity queries in PostgreSQL, achieving sub-100ms vector lookup responses.
+## TECHNICAL SKILLS
+- **Languages:** TypeScript, JavaScript (ES6+), Python, SQL, C, C++
+- **Frontend:** React.js, Next.js (App Router), Tailwind CSS, HTML5, CSS3
+- **Backend & AI:** FastAPI, Node.js, Express.js, Flask, SQLAlchemy (Async), REST APIs, JWT/RBAC, LangChain, Gemini API, Sentence Transformers
+- **Databases:** PostgreSQL, SQLite, MongoDB, MySQL, Schema Design, Query Optimization
+- **DevOps & Tools:** Docker, Git, GitHub, Vercel, AWS, GCP, Puppeteer, Postman, PyInstaller
 
 ---
 
-## Selected Projects
+## PROFESSIONAL EXPERIENCE
 
-### Zewar Desk — Multi-Tenant Jewellery ERP
-*Next.js 14, TypeScript, Express.js, PostgreSQL, Tailwind CSS, Zustand, React Query, Playwright* | [GitHub](https://github.com/rajakrp18)
-- Architected a multi-tenant ERP platform across 4 core business domains (inventory lifecycle, automated billing, customer CRM, and reporting) with 18+ modular REST APIs and strict tenant data isolation.
-- Implemented JWT HTTP-only cookie authentication, RBAC middleware, and per-company/per-fiscal-year database isolation to enforce role-scoped authorization across admin, staff, and billing tiers.
-- Built 50+ frontend views with React Query and Zustand for client state synchronization and automated end-to-end QA flows using Playwright.
+### Software Engineer | Miraaj Associates
+*New Delhi, India | Oct 2025 – Oct 2026*  
+*Next.js 14, TypeScript, Node.js, FastAPI, PostgreSQL, SQLAlchemy 2.0 (Async), SQLite, Gemini API, Transformers.js, Docker*
 
-### Dairy Distribution Management & Business Analytics
-*PHP, MySQL, JavaScript, Analytics* | Production Deployment
-- Designed normalized MySQL database schema managing customer rosters, daily milk volume metrics, and supplier payments for 500+ daily transactions.
-- Engineered business analytics dashboard delivering real-time revenue curves, debtor summaries, and automated stock replenishment alerts.
+- **Architected Cyber Law Watch Agent (LexSentry)**, an async regulatory platform (FastAPI, SQLAlchemy 2.0, Next.js 14) ingesting and priority-scoring (P0–P2) precedents across **8 judicial and regulatory sources**, replacing manual multi-portal checks.
+- **Developed a multi-turn Legal RAG Copilot** (Gemini API) with source-grounded PDF citations, automated client advisory drafting, hot-reload API key diagnostics, and an offline statutory fallback maintaining **100% uptime** without external LLM access.
+- **Built a 2-app TypeScript/Next.js monorepo** (Contact Finder & Project Researcher) deployed on Vercel, supporting batch OSINT investigation of **20+ subjects** per run via CSV and AI PDF-to-CSV ingestion.
+- **Orchestrated a 4-agent extraction pipeline** (Coordinator, Researcher, Extractor, Verifier) integrating regex, offline Transformers.js chunking, and Gemini Vision OCR with a **0–100% multi-factor confidence scoring model** and OpenRouter fallback.
+- **Designed a multi-tenant Jewellery ERP platform** (Next.js, Node.js, PostgreSQL) comprising **18 modular REST APIs** across 4 core business domains: inventory, billing, customer CRM, and automated reporting.
+- **Secured multi-role ERP endpoints** using JWT HTTP-only cookies and RBAC middleware, enforcing strict role-scoped authorization and tenant isolation across admin, staff, and billing workflows.
+
+### Software Engineering Intern | Weloin Technologies
+*Jul 2025 – Sep 2025*  
+*Python, FastAPI, Hugging Face Sentence Transformers, PostgreSQL, Docker*
+
+- **Engineered an NLP medicine-matching engine** using Hugging Face Sentence Transformers and cosine similarity to retrieve pharmacologically equivalent substitutes when exact catalog matches were unavailable.
+- **Automated data extraction pipelines** and FastAPI vector-search services across **2 data domains** (medicine and inventory), indexing embeddings in PostgreSQL for fast fuzzy retrieval.
+- **Containerized the end-to-end NLP and API stack with Docker**, standardizing local development and reproducible deployment environments.
 
 ---
 
-## Education
-
-**Master of Computer Applications (MCA)**  
-*JIS College of Engineering | Jul 2022 – Jul 2024*  
-Grade: 70% | Focus: Computer Programming, Relational Databases, Machine Learning, Distributed Systems
-
-**Bachelor of Science in Computer Science (B.Sc. CS)**  
-*Kanchrapara College | Jun 2019 – Jul 2022*  
-Grade: 83% (First Class) | Focus: Data Structures & Algorithms, C/C++, Database Systems, Computer Networks
+## EDUCATION
+- **Master of Computer Applications (MCA)** — JIS College of Engineering, Kalyani, WB | 2024 | Score: 70%
+- **Bachelor of Science (B.Sc.)** — Kanchrapara College, WB | 2022 | Score: 83%

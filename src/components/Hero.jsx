@@ -241,11 +241,11 @@ const Hero = () => {
                   <span>Recent Role</span>
                 </div>
                 <div className="text-sm font-bold text-slate-900 dark:text-white">
-                  Software Engineer (AI & Full-Stack)
+                  Software Engineer
                 </div>
                 <div className="text-xs text-slate-600 dark:text-slate-400 flex items-center justify-between mt-0.5">
-                  <span>Miraaj Associates • Delhi, India</span>
-                  <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 font-medium">Aug 2026 – Oct 2026</span>
+                  <span>Miraaj Associates • New Delhi, India</span>
+                  <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 font-medium">Oct 2025 – Oct 2026</span>
                 </div>
               </div>
 

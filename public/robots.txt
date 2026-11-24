@@ -27,4 +27,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://rajakrp18.github.io/PortfolioMine/sitemap.xml
+Sitemap: https://www.rajpoddar.in/sitemap.xml

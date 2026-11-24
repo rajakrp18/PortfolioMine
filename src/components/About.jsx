@@ -97,7 +97,7 @@ const About = () => {
               </p>
 
               <p>
-                Recently, I worked as a <strong className="text-slate-900 dark:text-white">Software Engineer (AI & Full-Stack) at Miraaj Associates</strong>, engineering autonomous regulatory intelligence platforms, legal RAG copilots, and full-stack integrations. Previously, I developed AI monorepos and high-throughput backend services at Vision Innovations and engineered NLP vector similarity search engines at Weloin Global.
+                Recently, I worked as a <strong className="text-slate-900 dark:text-white">Software Engineer at Miraaj Associates</strong>, engineering autonomous regulatory intelligence platforms, legal RAG copilots, multi-agent OSINT engines, and multi-tenant ERP systems. Previously, I engineered NLP vector similarity search engines at Weloin Technologies.
               </p>
 
               <div className="pt-2 border-t border-slate-200 dark:border-slate-800/80 flex flex-wrap gap-2 text-xs font-mono text-slate-500 dark:text-slate-400">

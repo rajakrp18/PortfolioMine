@@ -5,52 +5,37 @@ import { Briefcase, Calendar, MapPin, CheckCircle2, Terminal, ArrowUpRight } fro
 const Experience = () => {
   const experiences = [
     {
-      role: 'Software Engineer (AI & Full-Stack)',
+      role: 'Software Engineer',
       company: 'Miraaj Associates',
       type: 'Full-time',
-      location: 'Delhi, India (On-site)',
-      period: 'Aug 2026 – Oct 2026 (3 months)',
+      location: 'New Delhi, India (On-site)',
+      period: 'Oct 2025 – Oct 2026 (1 year)',
       current: false,
-      description: 'Architecting autonomous regulatory intelligence platforms, multi-turn legal RAG copilots, and enterprise AI automation services connecting judicial databases with internal workflows.',
+      description: 'Architected full-stack web applications, asynchronous REST APIs, and applied AI pipelines spanning regulatory intelligence (LexSentry), multi-agent OSINT engines (Contact Finder), and multi-tenant ERP platforms (Zewar Desk).',
       achievements: [
-        'Architected Cyber Law Watch Agent (LexSentry), an async full-stack regulatory intelligence platform using FastAPI, SQLAlchemy 2.0 (aiosqlite), and Next.js 14 to ingest, filter, and priority-score (P0–P2) rulings across 8 judicial and regulatory sources (Supreme Court, High Courts, RBI, CERT-In).',
-        'Engineered a multi-turn Legal RAG Copilot using async Gemini API calls with source-grounded PDF citations, automated client advisory drafting, and a local statutory fallback engine for graceful degradation when external LLM APIs are unavailable.',
-        'Built an in-app diagnostics and hot-reload configuration module to validate API keys via live roundtrip latency checks and update runtime backend settings without server restarts, alongside a standalone Windows desktop launcher and Docker deployment setup.',
-        'Designed CMS matter impact mapping cross-referencing incoming rulings against active practice files, generating T-63 associate litigation tasks and court-ready petition clauses under Section 457 Cr.P.C. / Section 503 BNSS.'
+        'Architected Cyber Law Watch Agent (LexSentry), an async regulatory platform (FastAPI, SQLAlchemy 2.0, Next.js 14) ingesting and priority-scoring (P0–P2) precedents across 8 judicial and regulatory sources, replacing manual multi-portal checks.',
+        'Developed a multi-turn Legal RAG Copilot (Gemini API) with source-grounded PDF citations, automated client advisory drafting, hot-reload API key diagnostics, and an offline statutory fallback maintaining 100% uptime without external LLM access.',
+        'Built a 2-app TypeScript/Next.js monorepo (Contact Finder & Project Researcher) deployed on Vercel, supporting batch OSINT investigation of 20+ subjects per run via CSV and AI PDF-to-CSV ingestion.',
+        'Orchestrated a 4-agent extraction pipeline (Coordinator, Researcher, Extractor, Verifier) integrating regex, offline Transformers.js chunking, and Gemini Vision OCR with a 0–100% multi-factor confidence scoring model and OpenRouter fallback.',
+        'Designed a multi-tenant Jewellery ERP platform (Next.js, Node.js, PostgreSQL) comprising 18 modular REST APIs across 4 core business domains: inventory, billing, customer CRM, and automated reporting.',
+        'Secured multi-role ERP endpoints using JWT HTTP-only cookies and RBAC middleware, enforcing strict role-scoped authorization and tenant isolation across admin, staff, and billing workflows.'
       ],
-      skills: ['FastAPI', 'Next.js 14', 'Python', 'Google Gemini API', 'SQLAlchemy 2.0 (Async)', 'LangChain / LangGraph', 'Docker', 'REST APIs']
+      skills: ['Next.js 14', 'TypeScript', 'Node.js', 'FastAPI', 'PostgreSQL', 'SQLAlchemy 2.0 (Async)', 'SQLite', 'Gemini API', 'Transformers.js', 'Docker']
     },
     {
-      role: 'Software Developer',
-      company: 'Vision Innovations',
-      type: 'Full-time',
-      location: 'Kolkata, West Bengal, India (On-site)',
-      period: 'Sep 2025 – Aug 2026 (1 year)',
-      current: false,
-      description: 'Architected enterprise AI monorepo platforms, multi-agent OSINT pipelines, and high-throughput backend services and PostgreSQL database optimizations.',
-      achievements: [
-        'Architected a 2-app TypeScript / Next.js monorepo combining an OSINT contact-attribution engine (Contact Finder) and an AI software blueprint/PRD generator (Project Researcher), deployed live on Vercel.',
-        'Engineered a 4-agent investigation pipeline (Coordinator, Researcher, Extractor, Verifier) combining regex parsing, offline semantic chunking (Transformers.js), Gemini Flash/Vision OCR, and a weighted 0–100% multi-factor identity confidence scoring model.',
-        'Built bulk CSV/PDF dividend statement ingestion workflows with exponential backoff rate-limit handling, OpenRouter LLM fallback, and BYOK (Bring Your Own Key) client-side API key management.',
-        'Deployed FastAPI microservices and optimized PostgreSQL relational schemas and REST API data flows for high-throughput workloads, supporting structured file formats (.jpg, .npz) and real-time feed-quality analytics.'
-      ],
-      skills: ['TypeScript', 'Next.js', 'React', 'FastAPI', 'Python', 'Google Gemini API', 'Transformers.js', 'Puppeteer', 'PostgreSQL', 'SQLite']
-    },
-    {
-      role: 'Software Engineer Intern',
-      company: 'Weloin Global Private Limited',
+      role: 'Software Engineering Intern',
+      company: 'Weloin Technologies',
       type: 'Internship',
       location: 'Kolkata, West Bengal, India (On-site)',
       period: 'Jul 2025 – Sep 2025 (3 months)',
       current: false,
       description: 'Built vector similarity search pipelines, natural language processing models, and containerized backend services for automated medicine matching.',
       achievements: [
-        'Engineered an NLP-based medicine matching engine using Hugging Face Sentence Transformers and cosine similarity to retrieve pharmacologically equivalent alternatives when exact matches were unavailable.',
-        'Built FastAPI vector-search services and automated data extraction pipelines across medicine and inventory domains for embedding-based fuzzy matching.',
-        'Containerized the NLP stack with Docker and managed embedding storage and indexed similarity queries in PostgreSQL.',
-        'Optimized similarity search algorithms and database indexing to deliver sub-100ms vector lookup responses across medical formulation datasets.'
+        'Engineered an NLP medicine-matching engine using Hugging Face Sentence Transformers and cosine similarity to retrieve pharmacologically equivalent substitutes when exact catalog matches were unavailable.',
+        'Automated data extraction pipelines and FastAPI vector-search services across 2 data domains (medicine and inventory), indexing embeddings in PostgreSQL for fast fuzzy retrieval.',
+        'Containerized the end-to-end NLP and API stack with Docker, standardizing local development and reproducible deployment environments.'
       ],
-      skills: ['Python', 'FastAPI', 'Hugging Face', 'Sentence Transformers', 'Vector Search', 'PostgreSQL', 'Docker']
+      skills: ['Python', 'FastAPI', 'Hugging Face', 'Sentence Transformers', 'PostgreSQL', 'Docker']
     }
   ];
 
